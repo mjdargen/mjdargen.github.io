@@ -95,7 +95,7 @@ function asciiStartup() {
 
   var startDrawingASCIIVideo = function () {
     var context = canvas.getContext('2d'),
-        fps = 30;
+        fps = 10;
 
     canvas.setAttribute('width', CANVAS_WIDTH);
     canvas.setAttribute('height', CANVAS_HEIGHT);
