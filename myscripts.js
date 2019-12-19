@@ -96,7 +96,7 @@ function githubIconClick() {
 
 /* double clicking email icon */
 function emailIconClick() {
-	window.open('mailto:mjdargenio@gmail.com');
+	window.open('mailto:mjdargen@gmail.com');
 }
 
 /* double clicking ascii icon */
