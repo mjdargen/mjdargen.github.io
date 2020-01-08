@@ -83,24 +83,32 @@ Your browser does not support the audio element.
 		</figure>
 
 		<figure onclick="magicIconClick()" onmouseover="magicIconHover()" onmouseout="magicIconUnhover()">
-			<img id="magicIcon" src="media/w95-help.png" alt="cowsay" style="position:absolute; width: 44px; top: 452px; left: 16px;"></img>
+			<img id="magicIcon" src="media/w95-help.png" alt="cowsay" style="position:absolute; width: 44px; top: 12px; right: 16px;"></img>
 			<figcaption style="position:absolute; width: 46px;
-				top: 496px; left: 16px;">magic 8-ball</figcaption>
+				top: 58px; right: 12px;">magic 8-ball</figcaption>
 			</figure>
 
 		<figure onclick="cowsayIconClick()" onmouseover="cowsayIconHover()" onmouseout="cowsayIconUnhover()">
-			<img id="cowsayIcon" src="media/cowsay.png" alt="cowsay" style="position:absolute; width: 56px; top: 530px; left: 10px;"></img>
+			<img id="cowsayIcon" src="media/cowsay.png" alt="cowsay" style="position:absolute; width: 56px; top: 92px; right: 10px;"></img>
 			<figcaption style="position:absolute; width: 40px;
-			top: 572px; left: 14px;">cowsay</figcaption>
+			top: 134px; right: 18px;">cowsay</figcaption>
 		</figure>
 	</div>
 
 	<figure onclick="asciiIconClick();asciiStartup();" onmouseover="asciiIconHover()" onmouseout="asciiIconUnhover()">
-		<img id="asciiIcon" src="media/w95-computer.png" alt="ascii webcam" style="position:absolute; width: 44px; top: 596px; left: 16px;"></img>
+		<img id="asciiIcon" src="media/w95-computer.png" alt="ascii webcam" style="position:absolute; width: 44px; top: 156px; right: 16px;"></img>
 		<figcaption style="position:absolute; width: 40px;
-		top: 644px; left: 18px;">ascii</figcaption>
+		top: 203px; right: 18px;">ascii</figcaption>
 		<figcaption style="position:absolute; width: 40px;
-		top: 654px; left: 16px;">webcam</figcaption>
+		top: 214px; right: 19px;">webcam</figcaption>
+	</figure>
+
+	<figure onclick="writerIconClick()" onmouseover="writerIconHover()" onmouseout="writerIconUnhover()">
+		<img id="writerIcon" src="media/w95-notepad.png" alt="writer's block" style="position:absolute; width: 44px; top: 236px; right: 18px;"></img>
+		<figcaption style="position:absolute; width: 40px;
+		top: 282px; right: 24px;">writer's</figcaption>
+		<figcaption style="position:absolute; width: 40px;
+		top: 293px; right: 16px;">block</figcaption>
 	</figure>
 
 
@@ -143,6 +151,9 @@ Your browser does not support the audio element.
 			</a>
 			<a onclick="asciiIconClick();asciiStartup();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
 				ascii webcam
+			</a>
+			<a onclick="writerIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+				writer's block
 			</a>
 		</div>
 	</div>
@@ -376,6 +387,36 @@ Your browser does not support the audio element.
 				</div>
 			</div>
 		</div></div></div>
+
+	<!-- writer's block window -->
+	<div class="drsElement" id="writerwindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
+		<div class="drsMoveHandle">
+			<div id="windowtopbar">writersblock.exe
+				<button onclick="writerXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+			</button>
+		</div>
+	</div>
+	<div id="window_content">
+		<div style="position: relative; padding: 16px;
+		background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
+		Have writer's block? Machine learning can help! Try using this Google Colaboratory Notebook I created that shows how to use OpenAI’s GPT-2, a state-of-the-art machine learning model for text generation. Colab allows you to use a virtual machine with a GPU to run machine learning models much more efficiently without burdening your hardware. You can run this model in Colab from any computer. Just follow the step by step instructions described in the project to generate your own text!
+		<br><br>
+		Below is an example of text generated using GPT-2 with the prompt: "Harry turned to Frodo and gave him a look."
+		<br><br>
+		<div style="background-color:#008080; padding:8px">
+			Harry turned to Frodo and gave him a look. "You've done all you could. I don't see why we should be worried about your family."<br>
+			"I don't think I need to explain that," Frodo said, "I've told you before, I'm not really your brother."<br>
+			"It's not a secret, really," Sam said, "I've been telling you that since I was a little boy, and I think you know why."<br>
+			"I know that's not true," Frodo said, "but it's not a secret that I am a Hobbit."<br>
+			"You are a Hobbit," Sam said.<br>
+			"I am a Hobbit," Frodo repeated.<br>
+			"And I am a man," Sam said.<br>
+			"And I am a wizard," Frodo said.
+		</div>
+		<br><br>
+		Here is a link to the Google Colaboratory project:
+		<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://colab.research.google.com/drive/1qkCR47a8jjVYsAutSDMto35dq-zKciQM">https://colab.research.google.com/drive/1qkCR47a8jjVYsAutSDMto35dq-zKciQM</a>
+		</div></div></div></div>
 
 
 	<!-- project windows -->

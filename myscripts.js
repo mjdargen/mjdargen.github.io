@@ -193,7 +193,7 @@ function asciiXClick() {
 	x.remove();*/
 }
 
-/* double clicking cowsay icon */
+/* double clicking magic 8 ball icon */
 function magicIconClick() {
 	var x = document.getElementById('magic8ballwindow');
 	x.style.display = "block";
@@ -208,9 +208,30 @@ function magicIconClick() {
 	x.focus();
 }
 
-/* clicking x on cowsay window */
+/* clicking x on magic 8 ball window */
 function magic8ballXClick() {
 	var x = document.getElementById('magic8ballwindow');
+	x.style.display = "none";
+}
+
+/* double clicking writer's block icon */
+function writerIconClick() {
+	var x = document.getElementById('writerwindow');
+	x.style.display = "block";
+
+	// makes current window the top window
+	var windows = document.getElementsByClassName('drsElement');
+	var i = windows.length;
+	while(i--) {
+			windows[i].style.zIndex = "3";
+	}
+	x.style.zIndex = "4";
+	x.focus();
+}
+
+/* clicking x on writer's block window */
+function writerXClick() {
+	var x = document.getElementById('writerwindow');
 	x.style.display = "none";
 }
 
@@ -315,13 +336,13 @@ function cowsayIconUnhover() {
 	x.setAttribute("src", "media/cowsay.png");
 }
 
-/* hovering over cowsay */
+/* hovering over magic 8 ball */
 function magicIconHover() {
 	var x = document.getElementById('magicIcon');
 	x.setAttribute("src", "media/w95-help-inv.png");
 }
 
-/* unhovering over cowsay */
+/* unhovering over magic 8 ball */
 function magicIconUnhover() {
 	var x = document.getElementById('magicIcon');
 	x.setAttribute("src", "media/w95-help.png");
@@ -337,4 +358,16 @@ function startButtonHover() {
 function startButtonUnhover() {
 	var x = document.getElementById('osIcon');
 	x.setAttribute("src", "media/w95-computer.png");
+}
+
+/* hovering over cowsay */
+function writerIconHover() {
+	var x = document.getElementById('writerIcon');
+	x.setAttribute("src", "media/w95-notepad-inv.png");
+}
+
+/* unhovering over cowsay */
+function writerIconUnhover() {
+	var x = document.getElementById('writerIcon');
+	x.setAttribute("src", "media/w95-notepad.png");
 }
