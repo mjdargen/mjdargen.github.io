@@ -235,6 +235,27 @@ function writerXClick() {
 	x.style.display = "none";
 }
 
+/* double clicking dorkwave icon */
+function dorkwaveIconClick() {
+	var x = document.getElementById('dorkwavewindow');
+	x.style.display = "block";
+
+	// makes current window the top window
+	var windows = document.getElementsByClassName('drsElement');
+	var i = windows.length;
+	while(i--) {
+			windows[i].style.zIndex = "3";
+	}
+	x.style.zIndex = "4";
+	x.focus();
+}
+
+/* clicking x on dorkwave window */
+function dorkwaveXClick() {
+	var x = document.getElementById('dorkwavewindow');
+	x.style.display = "none";
+}
+
 
 /* --------------------------------------------------------------- */
 /*                  handles hovering over icons                    */
@@ -360,14 +381,26 @@ function startButtonUnhover() {
 	x.setAttribute("src", "media/w95-computer.png");
 }
 
-/* hovering over cowsay */
+/* hovering over writer's block */
 function writerIconHover() {
 	var x = document.getElementById('writerIcon');
 	x.setAttribute("src", "media/w95-notepad-inv.png");
 }
 
-/* unhovering over cowsay */
+/* unhovering over writer's block */
 function writerIconUnhover() {
 	var x = document.getElementById('writerIcon');
 	x.setAttribute("src", "media/w95-notepad.png");
+}
+
+/* hovering over dorkwave */
+function dorkwaveIconHover() {
+	var x = document.getElementById('dorkwaveIcon');
+	x.setAttribute("src", "media/dorkwave-inv.png");
+}
+
+/* unhovering over dorkwave */
+function dorkwaveIconUnhover() {
+	var x = document.getElementById('dorkwaveIcon');
+	x.setAttribute("src", "media/dorkwave.png");
 }

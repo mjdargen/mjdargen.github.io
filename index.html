@@ -93,7 +93,6 @@ Your browser does not support the audio element.
 			<figcaption style="position:absolute; width: 40px;
 			top: 134px; right: 18px;">cowsay</figcaption>
 		</figure>
-	</div>
 
 	<figure onclick="asciiIconClick();asciiStartup();" onmouseover="asciiIconHover()" onmouseout="asciiIconUnhover()">
 		<img id="asciiIcon" src="media/w95-computer.png" alt="ascii webcam" style="position:absolute; width: 44px; top: 156px; right: 16px;"></img>
@@ -110,6 +109,13 @@ Your browser does not support the audio element.
 		<figcaption style="position:absolute; width: 40px;
 		top: 293px; right: 16px;">block</figcaption>
 	</figure>
+
+	<figure onclick="dorkwaveIconClick()" onmouseover="dorkwaveIconHover()" onmouseout="dorkwaveIconUnhover()">
+		<img id="dorkwaveIcon" src="media/dorkwave.png" alt="dorkwave" style="position:absolute; width: 44px; top: 316px; right: 14px;"></img>
+		<figcaption style="position:absolute; width: 40px;
+		top: 364px; right: 24px;">dorkwave</figcaption>
+	</figure>
+</div>
 
 
 	<!-- start menu -->
@@ -154,6 +160,9 @@ Your browser does not support the audio element.
 			</a>
 			<a onclick="writerIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
 				writer's block
+			</a>
+			<a onclick="dorkwaveIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+				dorkwave
 			</a>
 		</div>
 	</div>
@@ -417,6 +426,25 @@ Your browser does not support the audio element.
 		Here is a link to the Google Colaboratory project:
 		<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://colab.research.google.com/drive/1qkCR47a8jjVYsAutSDMto35dq-zKciQM">https://colab.research.google.com/drive/1qkCR47a8jjVYsAutSDMto35dq-zKciQM</a>
 		</div></div></div></div>
+
+		<!-- dorkwave window -->
+		<div class="drsElement" id="dorkwavewindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
+			<div class="drsMoveHandle">
+				<div id="windowtopbar">dorkwave.exe
+					<button onclick="dorkwaveXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+				</button>
+			</div>
+		</div>
+		<div id="window_content">
+			<div style="position: relative; padding: 16px;
+			background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
+			Dorkwave is a glitchy A/V mixer that is rather rudimentary but produces some beautiful, distorted effects. The full project is detailed in the Instructable linked below. You can also view a sampling of the sorts of effects you can create in the video.
+			<br><br>
+			<div style="text-align: center">
+			<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/">https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/</a>
+			<br><br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/VGSIivBiiZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+			</div></div></div></div>
 
 
 	<!-- project windows -->
