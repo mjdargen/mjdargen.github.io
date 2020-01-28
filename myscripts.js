@@ -258,7 +258,8 @@ function dorkwaveXClick() {
 
 /* double clicking rc calculator icon */
 function rccalcIconClick() {
-	var x = document.getElementById('rccalcwindow');
+	window.open('https://dargenio.dev/Existing-Resistor-Capacitor-Equivalence-Calculator/', '_blank');
+	/*var x = document.getElementById('rccalcwindow');
 	x.style.display = "block";
 
 	// makes current window the top window
@@ -268,7 +269,7 @@ function rccalcIconClick() {
 			windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
-	x.focus();
+	x.focus();*/
 }
 
 /* clicking x on rc calculator window */
