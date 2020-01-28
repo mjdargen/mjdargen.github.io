@@ -248,7 +248,7 @@ tr:nth-child(even) {
 	font-size: 18px;
 	color: black;
 	background-color: #FF745F;
-	width: 400px;
+	width: 440px;
 	text-align: left;
 	z-index: 12;
 	user-select: none;
@@ -279,7 +279,7 @@ span#clock {
 	margin: auto;
 	background-color: #FF745F;
 	width: 220px;
-	height: 400px;
+	height: 440px;
 	border:solid #EC6760;
 	border-width: 4px 4px 4px 4px;
 	user-select: none;
@@ -336,6 +336,14 @@ span#clock {
 	line-height: 16px;
 	margin: none;
 	padding: 6px 4px 6px 4px;
+}
+
+.iframe_content {
+	height: calc(100% - 36px); /* minus header minus padding */
+	width: calc(100% - 4px); /* minus header minus padding */
+	text-align:center;
+	z-index: inherit;
+	overflow-y: auto;
 }
 
 #window_content {

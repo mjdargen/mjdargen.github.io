@@ -256,6 +256,27 @@ function dorkwaveXClick() {
 	x.style.display = "none";
 }
 
+/* double clicking rc calculator icon */
+function rccalcIconClick() {
+	var x = document.getElementById('rccalcwindow');
+	x.style.display = "block";
+
+	// makes current window the top window
+	var windows = document.getElementsByClassName('drsElement');
+	var i = windows.length;
+	while(i--) {
+			windows[i].style.zIndex = "3";
+	}
+	x.style.zIndex = "4";
+	x.focus();
+}
+
+/* clicking x on rc calculator window */
+function rccalcXClick() {
+	var x = document.getElementById('rccalcwindow');
+	x.style.display = "none";
+}
+
 
 /* --------------------------------------------------------------- */
 /*                  handles hovering over icons                    */
@@ -403,4 +424,16 @@ function dorkwaveIconHover() {
 function dorkwaveIconUnhover() {
 	var x = document.getElementById('dorkwaveIcon');
 	x.setAttribute("src", "media/dorkwave.png");
+}
+
+/* hovering over rc calculator */
+function rccalcIconHover() {
+	var x = document.getElementById('rccalcIcon');
+	x.setAttribute("src", "media/w95_calc_inv.png");
+}
+
+/* unhovering over rc calculator */
+function rccalcIconUnhover() {
+	var x = document.getElementById('rccalcIcon');
+	x.setAttribute("src", "media/w95_calc.png");
 }

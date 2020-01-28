@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 
+<!--
 <audio autoplay>
 <source src="media/Windows_95_Startup.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+-->
 
 <head>
 
@@ -111,9 +113,15 @@ Your browser does not support the audio element.
 	</figure>
 
 	<figure onclick="dorkwaveIconClick()" onmouseover="dorkwaveIconHover()" onmouseout="dorkwaveIconUnhover()">
-		<img id="dorkwaveIcon" src="media/dorkwave.png" alt="dorkwave" style="position:absolute; width: 44px; top: 316px; right: 14px;"></img>
+		<img id="dorkwaveIcon" src="media/dorkwave.png" alt="dorkwave" style="position:absolute; width: 42px; top: 316px; right: 15px;"></img>
 		<figcaption style="position:absolute; width: 40px;
-		top: 364px; right: 24px;">dorkwave</figcaption>
+		top: 362px; right: 26px;">dorkwave</figcaption>
+	</figure>
+
+	<figure onclick="rccalcIconClick()" onmouseover="rccalcIconHover()" onmouseout="rccalcIconUnhover()">
+		<img id="rccalcIcon" src="media/w95_calc.png" alt="rc calc" style="position:absolute; width: 44px; top: 388px; right: 14px;"></img>
+		<figcaption style="position:absolute; width: 40px;
+		top: 422px; right: 16px;">r/c calc</figcaption>
 	</figure>
 </div>
 
@@ -163,6 +171,9 @@ Your browser does not support the audio element.
 			</a>
 			<a onclick="dorkwaveIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
 				dorkwave
+			</a>
+			<a onclick="rccalcIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+				r/c calculator
 			</a>
 		</div>
 	</div>
@@ -425,7 +436,7 @@ Your browser does not support the audio element.
 		<br><br>
 		Here is a link to the Google Colaboratory project:
 		<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://colab.research.google.com/drive/1qkCR47a8jjVYsAutSDMto35dq-zKciQM">https://colab.research.google.com/drive/1qkCR47a8jjVYsAutSDMto35dq-zKciQM</a>
-		</div></div></div></div>
+		</div></div></div>
 
 		<!-- dorkwave window -->
 		<div class="drsElement" id="dorkwavewindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
@@ -444,7 +455,18 @@ Your browser does not support the audio element.
 			<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/">https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/</a>
 			<br><br>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/VGSIivBiiZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-			</div></div></div></div>
+			</div></div></div>
+
+			<!-- r/c calculator window -->
+			<div class="drsElement" id="rccalcwindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
+				<div class="drsMoveHandle">
+					<div id="windowtopbar">rc_calc.exe
+						<button onclick="rccalcXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+					</button>
+				</div>
+			</div>
+				<iframe class="iframe_content" src="https://dargenio.dev/Existing-Resistor-Capacitor-Equivalence-Calculator/"></iframe>
+			</div>
 
 
 	<!-- project windows -->
