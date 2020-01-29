@@ -258,7 +258,7 @@ function dorkwaveXClick() {
 
 /* double clicking rc calculator icon */
 function rccalcIconClick() {
-	window.open('https://dargenio.dev/Existing-Resistor-Capacitor-Equivalence-Calculator/', '_blank');
+	window.open('https://dargenio.dev/Stocked-RC-Equivalence-Calculator/', '_blank');
 	/*var x = document.getElementById('rccalcwindow');
 	x.style.display = "block";
 
