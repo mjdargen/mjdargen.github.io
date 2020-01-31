@@ -248,7 +248,7 @@ tr:nth-child(even) {
 	font-size: 18px;
 	color: black;
 	background-color: #FF745F;
-	width: 440px;
+	width: 480px;
 	text-align: left;
 	z-index: 12;
 	user-select: none;
@@ -279,7 +279,7 @@ span#clock {
 	margin: auto;
 	background-color: #FF745F;
 	width: 220px;
-	height: 440px;
+	height: 480px;
 	border:solid #EC6760;
 	border-width: 4px 4px 4px 4px;
 	user-select: none;
@@ -359,29 +359,6 @@ span#clock {
 	overflow-y: scroll;
   -webkit-overflow-scrolling: touch; */
 }
-
-/*::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-    width: 12px;
-}
-
-::-webkit-scrollbar:horizontal {
-    height: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #ffffff;
-}*/
 
 /* --------------------------------------------------- */
 /*                     Drag resize                     */
@@ -521,4 +498,19 @@ p#magic8ball_answer {
 	width: 70%;
 	height: 50%;
 	background-color: inherit;
+}
+
+/* youtube video */
+.youtube_container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

@@ -278,6 +278,10 @@ function rccalcXClick() {
 	x.style.display = "none";
 }
 
+/* double clicking instructables icon */
+function instructablesIconClick() {
+	window.open('https://www.instructables.com/member/mjdargen/instructables/', '_blank');
+}
 
 /* --------------------------------------------------------------- */
 /*                  handles hovering over icons                    */
@@ -437,4 +441,16 @@ function rccalcIconHover() {
 function rccalcIconUnhover() {
 	var x = document.getElementById('rccalcIcon');
 	x.setAttribute("src", "media/w95_calc.png");
+}
+
+/* hovering over instructables */
+function instructablesIconHover() {
+	var x = document.getElementById('instructablesIcon');
+	x.setAttribute("src", "media/instructables_inv.png");
+}
+
+/* unhovering over instructables */
+function instructablesIconUnhover() {
+	var x = document.getElementById('instructablesIcon');
+	x.setAttribute("src", "media/instructables.png");
 }

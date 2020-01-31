@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<audio autoplay>
+<!--<audio autoplay>
 <source src="media/Windows_95_Startup.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio>
+</audio>-->
 
 <head>
 
@@ -121,6 +121,14 @@ Your browser does not support the audio element.
 		<figcaption style="position:absolute; width: 40px;
 		top: 422px; right: 16px;">r/c calc</figcaption>
 	</figure>
+
+	<figure onclick="instructablesIconClick()" onmouseover="instructablesIconHover()" onmouseout="instructablesIconUnhover()">
+		<img id="instructablesIcon" src="media/instructables.png" alt="rc calc" style="position:absolute; width: 40px; top: 452px; left: 16px;"></img>
+		<figcaption style="position:absolute; width: 40px;
+		top: 506px; left: 8px;">instruct</figcaption>
+		<figcaption style="position:absolute; width: 40px;
+		top: 520px; left: 16px;">ables</figcaption>
+	</figure>
 </div>
 
 
@@ -154,6 +162,9 @@ Your browser does not support the audio element.
 			</a>
 			<a onclick="philosophyIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
 				teaching philosophy
+			</a>
+			<a onclick="instructablesIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+				instructables
 			</a>
 			<a onclick="magicIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
 				magic 8-ball
@@ -200,16 +211,19 @@ Your browser does not support the audio element.
 		<br><br>
 		<div style="text-align: center;">
 			Here is my github: <br>
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/mjdargen">https://github.com/mjdargen</a>
+			<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://github.com/mjdargen">https://github.com/mjdargen</a>
 			<br><br>
 			Here is my linkedin: <br>
-			<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-d-argenio-6b648575/">https://www.linkedin.com/in/michael-d-argenio-6b648575/</a>
+			<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-d-argenio-6b648575/">https://www.linkedin.com/in/michael-d-argenio-6b648575/</a>
 			<br><br>
 			Here are my instructables projects: <br>
-			<a target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/member/mjdargen/">https://www.instructables.com/member/mjdargen/</a>
+			<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/member/mjdargen/instructables/">https://www.instructables.com/member/mjdargen/instructables/</a>
 			<br><br>
 			Here are some student projects from the course I taught last summer: <br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/vNbhNmfsVJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="youtube_container">
+			<iframe src="https://www.youtube.com/embed/vNbhNmfsVJk"
+			frameborder="0" allowfullscreen class="video"></iframe>
+			</div>
 			<br><br>
 			You can contact me at:<br>
 			<a href="mailto:mjdargen@gmail.com">mjdargen@gmail.com</a>
