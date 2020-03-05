@@ -283,6 +283,11 @@ function instructablesIconClick() {
 	window.open('https://www.instructables.com/member/mjdargen/instructables/', '_blank');
 }
 
+/* double clicking hackster icon */
+function hacksterIconClick() {
+	window.open('https://www.hackster.io/mjdargen', '_blank');
+}
+
 /* --------------------------------------------------------------- */
 /*                  handles hovering over icons                    */
 /* ----------------------------------------------------------------*/
@@ -453,4 +458,16 @@ function instructablesIconHover() {
 function instructablesIconUnhover() {
 	var x = document.getElementById('instructablesIcon');
 	x.setAttribute("src", "media/instructables.png");
+}
+
+/* hovering over hackster */
+function hacksterIconHover() {
+	var x = document.getElementById('hacksterIcon');
+	x.setAttribute("src", "media/hackster_inv.png");
+}
+
+/* unhovering over hackster */
+function hacksterIconUnhover() {
+	var x = document.getElementById('hacksterIcon');
+	x.setAttribute("src", "media/hackster.png");
 }
