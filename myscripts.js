@@ -278,14 +278,19 @@ function rccalcXClick() {
 	x.style.display = "none";
 }
 
-/* double clicking instructables icon */
+/* clicking instructables icon */
 function instructablesIconClick() {
 	window.open('https://www.instructables.com/member/mjdargen/instructables/', '_blank');
 }
 
-/* double clicking hackster icon */
+/* clicking hackster icon */
 function hacksterIconClick() {
 	window.open('https://www.hackster.io/mjdargen', '_blank');
+}
+
+/* clicking thesis icon */
+function thesisIconClick() {
+	window.open('https://repository.lib.ncsu.edu/handle/1840.20/37531', '_blank');
 }
 
 /* --------------------------------------------------------------- */
@@ -391,13 +396,13 @@ function cowsayIconUnhover() {
 /* hovering over magic 8 ball */
 function magicIconHover() {
 	var x = document.getElementById('magicIcon');
-	x.setAttribute("src", "media/w95-help-inv.png");
+	x.setAttribute("src", "media/w95-phone-inv.png");
 }
 
 /* unhovering over magic 8 ball */
 function magicIconUnhover() {
 	var x = document.getElementById('magicIcon');
-	x.setAttribute("src", "media/w95-help.png");
+	x.setAttribute("src", "media/w95-phone.png");
 }
 
 /* hovering over startbutton */
@@ -470,4 +475,16 @@ function hacksterIconHover() {
 function hacksterIconUnhover() {
 	var x = document.getElementById('hacksterIcon');
 	x.setAttribute("src", "media/hackster.png");
+}
+
+/* hovering over thesis */
+function thesisIconHover() {
+	var x = document.getElementById('thesisIcon');
+	x.setAttribute("src", "media/w95-help-inv.png");
+}
+
+/* unhovering over thesis */
+function thesisIconUnhover() {
+	var x = document.getElementById('thesisIcon');
+	x.setAttribute("src", "media/w95-help.png");
 }

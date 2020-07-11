@@ -6,6 +6,7 @@
 Your browser does not support the audio element.
 </audio>
 
+
 <head>
 
 	<meta charset="utf-8">
@@ -14,7 +15,7 @@ Your browser does not support the audio element.
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 	<!-- icon for browser -->
-	<link rel="icon" href="media/headshot.png">
+	<link rel="icon" href="media/londrangar.png">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space%20Mono">
 
@@ -82,8 +83,22 @@ Your browser does not support the audio element.
 			top: 428px; left: 2px;">philosophy</figcaption>
 		</figure>
 
+		<figure onclick="instructablesIconClick()" onmouseover="instructablesIconHover()" onmouseout="instructablesIconUnhover()">
+			<img id="instructablesIcon" src="media/instructables.png" alt="rc calc" style="position:absolute; width: 40px; top: 452px; left: 16px;"></img>
+			<figcaption style="position:absolute; width: 40px;
+			top: 506px; left: 8px;">instruct</figcaption>
+			<figcaption style="position:absolute; width: 40px;
+			top: 520px; left: 16px;">ables</figcaption>
+		</figure>
+
+		<figure onclick="hacksterIconClick()" onmouseover="hacksterIconHover()" onmouseout="hacksterIconUnhover()">
+			<img id="hacksterIcon" src="media/hackster.png" alt="hackster" style="position:absolute; width: 42px; top: 540px; left: 15px;"></img>
+			<figcaption style="position:absolute; width: 40px;
+			top: 586px; left: 8px;">hackster</figcaption>
+		</figure>
+
 		<figure onclick="magicIconClick()" onmouseover="magicIconHover()" onmouseout="magicIconUnhover()">
-			<img id="magicIcon" src="media/w95-help.png" alt="cowsay" style="position:absolute; width: 44px; top: 12px; right: 16px;"></img>
+			<img id="magicIcon" src="media/w95-phone.png" alt="cowsay" style="position:absolute; width: 44px; top: 12px; right: 16px;"></img>
 			<figcaption style="position:absolute; width: 46px;
 				top: 58px; right: 12px;">magic 8-ball</figcaption>
 			</figure>
@@ -122,18 +137,10 @@ Your browser does not support the audio element.
 		top: 422px; right: 16px;">r/c calc</figcaption>
 	</figure>
 
-	<figure onclick="instructablesIconClick()" onmouseover="instructablesIconHover()" onmouseout="instructablesIconUnhover()">
-		<img id="instructablesIcon" src="media/instructables.png" alt="rc calc" style="position:absolute; width: 40px; top: 452px; left: 16px;"></img>
+	<figure onclick="thesisIconClick()" onmouseover="thesisIconHover()" onmouseout="thesisIconUnhover()">
+		<img id="thesisIcon" src="media/w95-help.png" alt="thesis" style="position:absolute; width: 44px; top: 456px; right: 15px;"></img>
 		<figcaption style="position:absolute; width: 40px;
-		top: 506px; left: 8px;">instruct</figcaption>
-		<figcaption style="position:absolute; width: 40px;
-		top: 520px; left: 16px;">ables</figcaption>
-	</figure>
-
-	<figure onclick="hacksterIconClick()" onmouseover="hacksterIconHover()" onmouseout="hacksterIconUnhover()">
-		<img id="hacksterIcon" src="media/hackster.png" alt="rc calc" style="position:absolute; width: 42px; top: 540px; left: 15px;"></img>
-		<figcaption style="position:absolute; width: 40px;
-		top: 586px; left: 8px;">hackster</figcaption>
+		top: 500px; right: 18px;">thesis</figcaption>
 	</figure>
 </div>
 
@@ -192,6 +199,9 @@ Your browser does not support the audio element.
 			</a>
 			<a onclick="rccalcIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
 				r/c calculator
+			</a>
+			<a onclick="thesisIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+				thesis
 			</a>
 		</div>
 	</div>
