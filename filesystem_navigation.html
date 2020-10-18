@@ -22,15 +22,18 @@
 		going to the following web address:
 		<a href="https://repl.it/languages/bash" target="_blank" rel="noopener noreferrer">https://repl.it/languages/bash</a>.
 		You will only be using the terminal window on the right-most third of the screen.</p>
-	<p>Once you are there, type the following commands to create a copy of the filesystem you will need to navigate.</p>
-
-
+	<p>Once you are there, type the following commands. These commands download the compressed
+		file holding the filestructure, uncompress it, and remove the compressed file. Once you
+		have run these commands, you can navigate the directories (aka folders) to look through
+		the files to figure the next web address.</p>
 		<pre style="color:red">wget https://raw.githubusercontent.com/mjdargen/ctf_FS/main/ctf_FS.tar.gz
 
 tar -xzf ctf_FS.tar.gz
+
+rm -rf ctf_FS.tar.gz
 	</pre>
 	<p>Below is a list of commands you will need to use to navigate the file structure
-		and figure out the next web address. Research these Linux terminal commands to
+		and figure out the next web address. Research these Unix terminal commands to
 		figure out what they do and how to use them.
 	<ul>
 		<li>pwd</li>
