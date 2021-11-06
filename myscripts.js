@@ -288,6 +288,11 @@ function hacksterIconClick() {
 	window.open('https://www.hackster.io/mjdargen', '_blank');
 }
 
+/* clicking thingiverse icon */
+function thingiverseIconClick() {
+	window.open('https://www.thingiverse.com/mjdargen/designs', '_blank');
+}
+
 /* clicking thesis icon */
 function thesisIconClick() {
 	window.open('https://repository.lib.ncsu.edu/handle/1840.20/37531', '_blank');
@@ -487,4 +492,16 @@ function thesisIconHover() {
 function thesisIconUnhover() {
 	var x = document.getElementById('thesisIcon');
 	x.setAttribute("src", "media/w95-help.png");
+}
+
+/* hovering over thingiverse */
+function thingiverseIconHover() {
+	var x = document.getElementById('thingiverseIcon');
+	x.setAttribute("src", "media/thingiverse_inv.png");
+}
+
+/* unhovering over thingiverse */
+function thingiverseIconUnhover() {
+	var x = document.getElementById('thingiverseIcon');
+	x.setAttribute("src", "media/thingiverse.png");
 }
