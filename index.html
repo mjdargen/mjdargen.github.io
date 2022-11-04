@@ -2,627 +2,723 @@
 <html>
 
 <audio autoplay>
-	<source src="media/Windows_95_Startup.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
+    <source src="media/Windows_95_Startup.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
 </audio>
 
 
 <head>
 
-	<meta charset="utf-8">
-	<meta name="description"
-		content="Hello, my name is Michael D'Argenio. I am an electrical and computer engineer turned educator. I have a lot of experience in embedded software and hardware design. I am taking my technical experiences and leveraging them to create engaging curricula for students to interact with STEM and help make the world a better place.">
-	<meta name="author" content="Michael D'Argenio">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Hello, my name is Michael D'Argenio. I am an electrical and computer engineer turned educator. I have a lot of experience in embedded software and hardware design. I am taking my technical experiences and leveraging them to create engaging curricula for students to interact with STEM and help make the world a better place.">
+    <meta name="author" content="Michael D'Argenio">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-	<!-- icon for browser -->
-	<link rel="icon" href="media/londrangar_icon.png">
+    <!-- icon for browser -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space%20Mono">
 
-	<script type="text/javascript" src="myscripts.js"></script>
-	<script type="text/javascript" src="dragresize.js"></script>
-	<script type="text/javascript" src="ascii.js"></script>
-	<script type="text/javascript" src="cowsay.js"></script>
-	<script type="text/javascript" src="8ball.js"></script>
-	<script type="text/javascript" src="projects.js"></script>
-	<script type="text/javascript" src="build/pdf.js"></script>
-	<script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="myscripts.js"></script>
+    <script type="text/javascript" src="dragresize.js"></script>
+    <script type="text/javascript" src="ascii.js"></script>
+    <script type="text/javascript" src="cowsay.js"></script>
+    <script type="text/javascript" src="8ball.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
+    <script type="text/javascript" src="build/pdf.js"></script>
+    <script type="text/javascript" src="clock.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Michael D'Argenio</title>
+    <title>Michael D'Argenio</title>
 
-	<!-- desktop background image -->
-	<div id="bg">
-		<img src="media/londrangar.png" alt="londrangar" style="user-select: none">
-	</div>
+    <!-- desktop background image -->
+    <div id="bg">
+        <img src="media/londrangar.png" alt="londrangar" style="user-select: none">
+    </div>
 
 </head>
 
-<body onresize="initDragResize()" onload="setTimeout(aboutIconClick, 600); updateClock(); setInterval('updateClock()', 1000 );">
+<body onresize="initDragResize()"
+    onload="setTimeout(aboutIconClick, 600); updateClock(); setInterval('updateClock()', 1000 );">
 
-	<!-- desktop icons -->
-	<!-- desktop icons -->
-	<!-- desktop icons -->
-	<div>
-		<figure onclick="aboutIconClick();" onmouseover="aboutIconHover()" onmouseout="aboutIconUnhover()">
-			<img id="aboutIcon" src="media/w95-recycle.png" alt="about-me" style="position:absolute; width: 40px; top: 16px; left: 16px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 58px; left: 16px;">about me</figcaption>
-		</figure>
+    <!-- desktop icons -->
+    <!-- desktop icons -->
+    <!-- desktop icons -->
+    <div>
+        <figure onclick="aboutIconClick();" onmouseover="aboutIconHover()" onmouseout="aboutIconUnhover()">
+            <img id="aboutIcon" src="media/w95-recycle.png" alt="about-me"
+                style="position:absolute; width: 40px; top: 16px; left: 16px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 58px; left: 16px;">about me</figcaption>
+        </figure>
 
-		<figure onclick="githubIconClick()" onmouseover="githubIconHover()" onmouseout="githubIconUnhover()">
-			<img id="githubIcon" src="media/w95-internet.png" alt="github" style="position:absolute; width: 40px; top: 92px; left: 16px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 136px; left: 16px;">github</figcaption>
-		</figure>
+        <figure onclick="githubIconClick()" onmouseover="githubIconHover()" onmouseout="githubIconUnhover()">
+            <img id="githubIcon" src="media/w95-internet.png" alt="github"
+                style="position:absolute; width: 40px; top: 92px; left: 16px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 136px; left: 16px;">github</figcaption>
+        </figure>
 
-		<figure onclick="emailIconClick()" onmouseover="emailIconHover()" onmouseout="emailIconUnhover()">
-			<img id="emailIcon" src="media/w95-email.png" alt="email" style="position:absolute; width: 40px; top: 162px; left: 16px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 204px; left: 16px;">email me</figcaption>
-		</figure>
+        <figure onclick="emailIconClick()" onmouseover="emailIconHover()" onmouseout="emailIconUnhover()">
+            <img id="emailIcon" src="media/w95-email.png" alt="email"
+                style="position:absolute; width: 40px; top: 162px; left: 16px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 204px; left: 16px;">email me</figcaption>
+        </figure>
 
-		<!-- <figure onclick="projectsIconClick()" onmouseover="projectsIconHover()" onmouseout="projectsIconUnhover()">
-			<img id="projectsIcon" src="media/w95-folder.png" alt="projects" style="position:absolute; width: 40px; top: 238px; left: 16px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 278px; left: 10px;">projects</figcaption>
-		</figure> -->
+        <!-- <figure onclick="projectsIconClick()" onmouseover="projectsIconHover()" onmouseout="projectsIconUnhover()">
+            <img id="projectsIcon" src="media/w95-folder.png" alt="projects" style="position:absolute; width: 40px; top: 238px; left: 16px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 278px; left: 10px;">projects</figcaption>
+        </figure> -->
 
-		<figure onclick="resumeIconClick()" onmouseover="resumeIconHover()" onmouseout="resumeIconUnhover()">
-			<img id="resumeIcon" src="media/w95-paint.png" alt="resumé" style="position:absolute; width: 40px; top: 238px; left: 20px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 280px; left: 15px;">resumé </figcaption>
-		</figure>
+        <figure onclick="resumeIconClick()" onmouseover="resumeIconHover()" onmouseout="resumeIconUnhover()">
+            <img id="resumeIcon" src="media/w95-paint.png" alt="resumé"
+                style="position:absolute; width: 40px; top: 238px; left: 20px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 280px; left: 15px;">resumé </figcaption>
+        </figure>
 
-		<figure onclick="philosophyIconClick()" onmouseover="philosophyIconHover()" onmouseout="philosophyIconUnhover()">
-			<img id="philosophyIcon" src="media/w95-document.png" alt="teaching philosophy" style="position:absolute; width: 34px; top: 306px; left: 20px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 350px; left: 9px;">teaching</figcaption>
-			<figcaption style="position:absolute; width: 40px;
-			top: 362px; left: 2px;">philosophy</figcaption>
-		</figure>
+        <figure onclick="philosophyIconClick()" onmouseover="philosophyIconHover()"
+            onmouseout="philosophyIconUnhover()">
+            <img id="philosophyIcon" src="media/w95-document.png" alt="teaching philosophy"
+                style="position:absolute; width: 34px; top: 306px; left: 20px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 350px; left: 9px;">teaching</figcaption>
+            <figcaption style="position:absolute; width: 40px;
+            top: 362px; left: 2px;">philosophy</figcaption>
+        </figure>
 
-		<figure onclick="instructablesIconClick()" onmouseover="instructablesIconHover()" onmouseout="instructablesIconUnhover()">
-			<img id="instructablesIcon" src="media/instructables.png" alt="rc calc" style="position:absolute; width: 40px; top: 388px; left: 16px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 442px; left: 8px;">instruct</figcaption>
-			<figcaption style="position:absolute; width: 40px;
-			top: 454px; left: 16px;">ables</figcaption>
-		</figure>
+        <figure onclick="instructablesIconClick()" onmouseover="instructablesIconHover()"
+            onmouseout="instructablesIconUnhover()">
+            <img id="instructablesIcon" src="media/instructables.png" alt="rc calc"
+                style="position:absolute; width: 40px; top: 388px; left: 16px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 442px; left: 8px;">instruct</figcaption>
+            <figcaption style="position:absolute; width: 40px;
+            top: 454px; left: 16px;">ables</figcaption>
+        </figure>
 
-		<!-- <figure onclick="hacksterIconClick()" onmouseover="hacksterIconHover()" onmouseout="hacksterIconUnhover()">
-			<img id="hacksterIcon" src="media/hackster.png" alt="hackster" style="position:absolute; width: 42px; top: 478px; left: 15px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 524px; left: 8px;">hackster</figcaption>
-		</figure> -->
+        <!-- <figure onclick="hacksterIconClick()" onmouseover="hacksterIconHover()" onmouseout="hacksterIconUnhover()">
+            <img id="hacksterIcon" src="media/hackster.png" alt="hackster" style="position:absolute; width: 42px; top: 478px; left: 15px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 524px; left: 8px;">hackster</figcaption>
+        </figure> -->
 
-		<figure onclick="thingiverseIconClick()" onmouseover="thingiverseIconHover()" onmouseout="thingiverseIconUnhover()">
-			<img id="thingiverseIcon" src="media/thingiverse.png" alt="thingiverse" style="position:absolute; width: 42px; top: 478px; left: 15px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 524px; left: 14px;">thingi</figcaption>
-			<figcaption style="position:absolute; width: 40px;
-			top: 536px; left: 16px;">verse</figcaption>
-		</figure>
+        <figure onclick="thingiverseIconClick()" onmouseover="thingiverseIconHover()"
+            onmouseout="thingiverseIconUnhover()">
+            <img id="thingiverseIcon" src="media/thingiverse.png" alt="thingiverse"
+                style="position:absolute; width: 42px; top: 478px; left: 15px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 524px; left: 14px;">thingi</figcaption>
+            <figcaption style="position:absolute; width: 40px;
+            top: 536px; left: 16px;">verse</figcaption>
+        </figure>
 
-		<figure onclick="magicIconClick()" onmouseover="magicIconHover()" onmouseout="magicIconUnhover()">
-			<img id="magicIcon" src="media/w95-phone.png" alt="cowsay" style="position:absolute; width: 44px; top: 12px; right: 16px;"></img>
-			<figcaption style="position:absolute; width: 46px;
-				top: 58px; right: 12px;">magic 8-ball</figcaption>
-		</figure>
+        <figure onclick="youtubeIconClick()" onmouseover="youtubeIconHover()" onmouseout="youtubeIconUnhover()">
+            <img id="youtubeIcon" src="media/youtube.png" alt="YouTube"
+                style="position:absolute; width: 42px; top: 560px; left: 15px;">
+            <figcaption style="position:absolute; width: 40px;
+                    top: 594px; left: 11px;">youtube</figcaption>
+        </figure>
 
-		<figure onclick="cowsayIconClick()" onmouseover="cowsayIconHover()" onmouseout="cowsayIconUnhover()">
-			<img id="cowsayIcon" src="media/cowsay.png" alt="cowsay" style="position:absolute; width: 56px; top: 96px; right: 10px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-			top: 136px; right: 20px;">cowsay</figcaption>
-		</figure>
+        <figure onclick="magicIconClick()" onmouseover="magicIconHover()" onmouseout="magicIconUnhover()">
+            <img id="magicIcon" src="media/w95-phone.png" alt="cowsay"
+                style="position:absolute; width: 44px; top: 12px; right: 16px;">
+            <figcaption style="position:absolute; width: 46px;
+                top: 58px; right: 12px;">magic 8-ball</figcaption>
+        </figure>
 
-		<figure onclick="asciiIconClick();asciiStartup();" onmouseover="asciiIconHover()" onmouseout="asciiIconUnhover()">
-			<img id="asciiIcon" src="media/w95-computer.png" alt="ascii webcam" style="position:absolute; width: 44px; top: 160px; right: 16px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-		top: 208px; right: 18px;">ascii</figcaption>
-			<figcaption style="position:absolute; width: 40px;
-		top: 218px; right: 19px;">webcam</figcaption>
-		</figure>
+        <figure onclick="cowsayIconClick()" onmouseover="cowsayIconHover()" onmouseout="cowsayIconUnhover()">
+            <img id="cowsayIcon" src="media/cowsay.png" alt="cowsay"
+                style="position:absolute; width: 56px; top: 96px; right: 10px;">
+            <figcaption style="position:absolute; width: 40px;
+            top: 136px; right: 20px;">cowsay</figcaption>
+        </figure>
 
-		<figure onclick="writerIconClick()" onmouseover="writerIconHover()" onmouseout="writerIconUnhover()">
-			<img id="writerIcon" src="media/w95-notepad.png" alt="writer's block" style="position:absolute; width: 44px; top: 242px; right: 18px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-		top: 288px; right: 24px;">writer's</figcaption>
-			<figcaption style="position:absolute; width: 40px;
-		top: 298px; right: 16px;">block</figcaption>
-		</figure>
+        <figure onclick="asciiIconClick();asciiStartup();" onmouseover="asciiIconHover()"
+            onmouseout="asciiIconUnhover()">
+            <img id="asciiIcon" src="media/w95-computer.png" alt="ascii webcam"
+                style="position:absolute; width: 44px; top: 160px; right: 16px;">
+            <figcaption style="position:absolute; width: 40px;
+        top: 208px; right: 18px;">ascii</figcaption>
+            <figcaption style="position:absolute; width: 40px;
+        top: 218px; right: 19px;">webcam</figcaption>
+        </figure>
 
-		<figure onclick="dorkwaveIconClick()" onmouseover="dorkwaveIconHover()" onmouseout="dorkwaveIconUnhover()">
-			<img id="dorkwaveIcon" src="media/dorkwave.png" alt="dorkwave" style="position:absolute; width: 42px; top: 324px; right: 15px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-		top: 368px; right: 26px;">dorkwave</figcaption>
-		</figure>
+        <figure onclick="writerIconClick()" onmouseover="writerIconHover()" onmouseout="writerIconUnhover()">
+            <img id="writerIcon" src="media/w95-notepad.png" alt="writer's block"
+                style="position:absolute; width: 44px; top: 242px; right: 18px;">
+            <figcaption style="position:absolute; width: 40px;
+        top: 288px; right: 24px;">writer's</figcaption>
+            <figcaption style="position:absolute; width: 40px;
+        top: 298px; right: 16px;">block</figcaption>
+        </figure>
 
-		<figure onclick="rccalcIconClick()" onmouseover="rccalcIconHover()" onmouseout="rccalcIconUnhover()">
-			<img id="rccalcIcon" src="media/w95_calc.png" alt="rc calc" style="position:absolute; width: 44px; top: 394px; right: 14px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-		top: 428px; right: 16px;">r/c calc</figcaption>
-		</figure>
+        <figure onclick="dorkwaveIconClick()" onmouseover="dorkwaveIconHover()" onmouseout="dorkwaveIconUnhover()">
+            <img id="dorkwaveIcon" src="media/dorkwave.png" alt="dorkwave"
+                style="position:absolute; width: 42px; top: 324px; right: 15px;">
+            <figcaption style="position:absolute; width: 40px;
+        top: 368px; right: 26px;">dorkwave</figcaption>
+        </figure>
 
-		<figure onclick="thesisIconClick()" onmouseover="thesisIconHover()" onmouseout="thesisIconUnhover()">
-			<img id="thesisIcon" src="media/w95-help.png" alt="thesis" style="position:absolute; width: 44px; top: 464px; right: 15px;"></img>
-			<figcaption style="position:absolute; width: 40px;
-		top: 508px; right: 18px;">thesis</figcaption>
-		</figure>
-	</div>
+        <figure onclick="rccalcIconClick()" onmouseover="rccalcIconHover()" onmouseout="rccalcIconUnhover()">
+            <img id="rccalcIcon" src="media/w95_calc.png" alt="rc calc"
+                style="position:absolute; width: 44px; top: 394px; right: 14px;">
+            <figcaption style="position:absolute; width: 40px;
+        top: 428px; right: 16px;">r/c calc</figcaption>
+        </figure>
 
+        <figure onclick="thesisIconClick()" onmouseover="thesisIconHover()" onmouseout="thesisIconUnhover()">
+            <img id="thesisIcon" src="media/w95-help.png" alt="thesis"
+                style="position:absolute; width: 44px; top: 464px; right: 15px;">
+            <figcaption style="position:absolute; width: 40px;
+        top: 508px; right: 18px;">thesis</figcaption>
+        </figure>
 
-	<!-- start menu -->
-	<!-- start menu -->
-	<!-- start menu -->
-	<div class="dropup" onmouseover="startButtonHover()" onmouseout="startButtonUnhover()">
-		<button class="startbutton">
-			<img id="osIcon" src="media/w95-computer.png" alt="OS" style="position:absolute; width: 22px; padding: 1px 0 0 0; margin: 0;"></img>
-			&ensp;&nbsp;&ensp;Start</button>
-		<div class="dropup-OS" id="myDropupOS">
-			&ensp;<img id="osIcon" src="media/w95-computer.png" alt="OS" style="position:absolute; width: 22px; padding: 1px 0 0 0; margin: 0;"></img>
-			&ensp;&nbsp;Michael D'Argenio
-			<span id="clock">&nbsp;</span>
-		</div>
-		<div class="dropup-content" id="myDropup">
-			<a onclick="aboutIconClick()" style="border:solid #EC6760; border-width: 0px 0px 0px 0px">
-				about me
-			</a>
-			<a onclick="githubIconClick()" style="border:solid #EC6760; border-width: 4px 0px 4px 0px">
-				github
-			</a>
-			<a onclick="emailIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				email me
-			</a>
-			<!-- <a onclick="projectsIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				projects
-			</a> -->
-			<a onclick="resumeIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				resumé
-			</a>
-			<a onclick="philosophyIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				teaching philosophy
-			</a>
-			<a onclick="instructablesIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				instructables
-			</a>
-			<a onclick="hacksterIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				hackster
-			</a>
-			<a onclick="thingiverseIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				thingiverse
-			</a>
-			<a onclick="magicIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				magic 8-ball
-			</a>
-			<a onclick="cowsayIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				cowsay
-			</a>
-			<a onclick="asciiIconClick();asciiStartup();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				ascii webcam
-			</a>
-			<a onclick="writerIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				writer's block
-			</a>
-			<a onclick="dorkwaveIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				dorkwave
-			</a>
-			<a onclick="rccalcIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				r/c calculator
-			</a>
-			<a onclick="thesisIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
-				thesis
-			</a>
-		</div>
-	</div>
-	<div class="OS">Michael D'Argenio
-	</div>
-
-	<!-- windows -->
-	<!-- windows -->
-	<!-- windows -->
-
-	<!-- about me window -->
-	<div class="drsElement" id="aboutmewindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">aboutme.txt
-				<button onclick="aboutXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content">
-			<img src="media/headshot.png" alt="headshot" style="user-select: none; width: 200px;">
-			<div style="position: relative; padding: 16px;
-		background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
-				Hello, my name is Michael D'Argenio. I am an electrical and computer engineer turned educator. I have a lot of experience in embedded software and hardware design. I am taking my technical experiences and leveraging them to create engaging
-				curricula for students to interact with STEM and help make the world a better place.
-				<br><br>
-				<div style="display: flex; align-items: center; justify-content: center;">
-					<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mjdargen" data-color="#721B6F" data-emoji="☕" data-font="Lato" data-text="Buy me a coffee"
-						data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
-				</div>
-				<br>
-				This is my website I modeled after operating systems of the 90s. Please feel free to take a look around. To learn more about my past experiences and qualifications, check out my resume. For more information on my principles as an educator,
-				check out my teaching philosophy. For some lesson plans and fun projects to build, check out my projects folder or my github. To have some fun, play around with some of my applications on the desktop.
-				<br><br>
-				<div style="text-align: center;">
-					Here is my github: <br>
-					<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://github.com/mjdargen">https://github.com/mjdargen</a>
-					<br><br>
-					Here is my linkedin: <br>
-					<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-d-argenio-6b648575/">https://www.linkedin.com/in/michael-d-argenio-6b648575/</a>
-					<br><br>
-					Here are my instructables projects: <br>
-					<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/member/mjdargen/instructables/">https://www.instructables.com/member/mjdargen/instructables/</a>
-					<br><br>
-					Here are my hackster projects: <br>
-					<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://www.hackster.io/mjdargen">https://www.hackster.io/mjdargen</a>
-					<br><br>
-					Here are my thingiverse designs: <br>
-					<a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer" href="https://www.thingiverse.com/mjdargen/designs">https://www.thingiverse.com/mjdargen/designs</a>
-					<br><br>
-					Here are some student projects from previous classes/camps:<br>
-					<div class="youtube_container">
-						<iframe src="https://www.youtube.com/embed/ra8gbs2QOvE" frameborder="0" allowfullscreen class="video"></iframe>
-					</div>
-					<br>
-					<div class="youtube_container">
-						<iframe src="https://www.youtube.com/embed/-uttFvasdY0" frameborder="0" allowfullscreen class="video"></iframe>
-					</div>
-					<br>
-					<div class="youtube_container">
-						<iframe src="https://www.youtube.com/embed/vNbhNmfsVJk" frameborder="0" allowfullscreen class="video"></iframe>
-					</div>
-					<br><br>
-					You can contact me at:<br>
-					<a href="mailto:mjdargen@gmail.com">mjdargen@gmail.com</a>
-					<br><br><br>
-					---- Have a great day! ----
-					<br><br><br>
-					Copyright &copy; 2022 Michael D'Argenio.
-				</div>
-			</div>
-		</div>
-	</div>
+        <figure onclick="colorIconClick()" onmouseover="colorIconHover()" onmouseout="colorIconUnhover()">
+            <img id="colorIcon" src="media/color.png" alt="color of the day"
+                style="position:absolute; width: 44px; top: 544px; right: 15px;">
+            <figcaption style="position:absolute; width: 52px;
+                top: 594px; right: 12px;">color of the day</figcaption>
+        </figure>
+    </div>
 
 
-	<!-- project browser window -->
-	<!--
-		<div class="drsElement" id="projectswindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 32px); left: calc(10% + 32px); display: none;">
-			<div class="drsMoveHandle">
-				<div id="windowtopbar">projects
-					<button onclick="projectsXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content" style="padding: 0px; height: calc(100% - 28px);">
-			<div style="position: relative; background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
-				<table>
-					<tr>
-						<th></th>
-						<th>File Name</th>
-						<th>Type</th>
-						<th>Size</th>
-					</tr>
-					<tr>
-						<td onclick="_221()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_221()">Night Light</td>
-						<td onclick="_221()">text</td>
-						<td onclick="_221()">61 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_222()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_222()">Magic 8-Ball</td>
-						<td onclick="_222()">text</td>
-						<td onclick="_222()">114 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_223()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_223()">8x8 LED Matrix</td>
-						<td onclick="_223()">text</td>
-						<td onclick="_223()">79 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_224()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_224()">Weather Station</td>
-						<td onclick="_224()">text</td>
-						<td onclick="_224()">58 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_225()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_225()">Alarm System</td>
-						<td onclick="_225()">text</td>
-						<td onclick="_225()">57 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_226()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_226()">Morse Code Transmitter</td>
-						<td onclick="_226()">text</td>
-						<td onclick="_226()">75 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_227()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_227()">Calculator</td>
-						<td onclick="_227()">text</td>
-						<td onclick="_227()">194 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_228()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_228()">Digital Level</td>
-						<td onclick="_228()">text</td>
-						<td onclick="_228()">68 kB</td>
-					</tr>
-					<tr>
-						<td onclick="_229()">
-							<img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
-						</td>
-						<td onclick="_229()">Apps Platform</td>
-						<td onclick="_229()">text</td>
-						<td onclick="_229()">149 kB</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-	-->
+    <!-- start menu -->
+    <!-- start menu -->
+    <!-- start menu -->
+    <div class="dropup" onmouseover="startButtonHover()" onmouseout="startButtonUnhover()">
+        <button class="startbutton">
+            <img id="osIcon" src="media/w95-computer.png" alt="OS"
+                style="position:absolute; width: 22px; padding: 1px 0 0 0; margin: 0;">
+            &ensp;&nbsp;&ensp;Start</button>
+        <div class="dropup-OS" id="myDropupOS">
+            &ensp;<img id="osIcon" src="media/w95-computer.png" alt="OS"
+                style="position:absolute; width: 22px; padding: 1px 0 0 0; margin: 0;">
+            &ensp;&nbsp;Michael D'Argenio
+            <span id="clock">&nbsp;</span>
+        </div>
+        <div class="dropup-content" id="myDropup">
+            <a onclick="aboutIconClick()" style="border:solid #EC6760; border-width: 0px 0px 0px 0px">
+                about me
+            </a>
+            <a onclick="githubIconClick()" style="border:solid #EC6760; border-width: 4px 0px 4px 0px">
+                github
+            </a>
+            <a onclick="emailIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                email me
+            </a>
+            <!-- <a onclick="projectsIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                projects
+            </a> -->
+            <a onclick="resumeIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                resumé
+            </a>
+            <a onclick="philosophyIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                teaching philosophy
+            </a>
+            <a onclick="instructablesIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                instructables
+            </a>
+            <a onclick="hacksterIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                hackster
+            </a>
+            <a onclick="thingiverseIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                thingiverse
+            </a>
+            <a onclick="magicIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                magic 8-ball
+            </a>
+            <a onclick="cowsayIconClick()" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                cowsay
+            </a>
+            <a onclick="asciiIconClick();asciiStartup();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                ascii webcam
+            </a>
+            <a onclick="writerIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                writer's block
+            </a>
+            <a onclick="dorkwaveIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                dorkwave
+            </a>
+            <a onclick="rccalcIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                r/c calculator
+            </a>
+            <a onclick="thesisIconClick();" style="border:solid #EC6760; border-width: 0px 0px 4px 0px">
+                thesis
+            </a>
+        </div>
+    </div>
+    <div class="OS">Michael D'Argenio
+    </div>
 
-	<!-- resume window -->
-	<div class="drsElement" id="resumewindow" style="position: fixed; min-width: 400px; width: 60%; height: 60%; top: 5%; left: 10%; display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">resume.txt
-				<button onclick="resumeXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-	</div>
+    <!-- windows -->
+    <!-- windows -->
+    <!-- windows -->
 
-	<!-- teaching philosophy window -->
-	<div class="drsElement" id="philosophywindow" style="position: fixed; min-width: 400px; width: 60%; height: 60%; top: calc(5% + 96px); left: calc(10% + 96px); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">teaching_philosophy.txt
-				<button onclick="philosophyXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-	</div>
+    <!-- about me window -->
+    <div class="drsElement" id="aboutmewindow"
+        style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">aboutme.txt
+                <button onclick="aboutXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+        <div id="window_content">
+            <img src="media/headshot.png" alt="headshot" style="user-select: none; width: 200px;">
+            <div style="position: relative; padding: 16px;
+        background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
+                Hello, my name is Michael D'Argenio. I am an electrical and computer engineer turned educator. I have a
+                lot of experience in embedded software and hardware design. I am taking my technical experiences and
+                leveraging them to create engaging
+                curricula for students to interact with STEM and help make the world a better place.
+                <br><br>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                        data-name="bmc-button" data-slug="mjdargen" data-color="#721B6F" data-emoji="☕" data-font="Lato"
+                        data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff"
+                        data-coffee-color="#FFDD00"></script>
+                </div>
+                <br>
+                This is my website I modeled after operating systems of the 90s. Please feel free to take a look around.
+                To learn more about my past experiences and qualifications, check out my resume. For more information on
+                my principles as an educator,
+                check out my teaching philosophy. For some lesson plans and fun projects to build, check out my projects
+                folder or my github. To have some fun, play around with some of my applications on the desktop.
+                <br><br>
+                <div style="text-align: center;">
+                    Here is my github: <br>
+                    <a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/mjdargen">https://github.com/mjdargen</a>
+                    <br><br>
+                    Here is my linkedin: <br>
+                    <a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer"
+                        href="https://www.linkedin.com/in/michael-d-argenio-6b648575/">https://www.linkedin.com/in/michael-d-argenio-6b648575/</a>
+                    <br><br>
+                    Here are my instructables projects: <br>
+                    <a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer"
+                        href="https://www.instructables.com/member/mjdargen/instructables/">https://www.instructables.com/member/mjdargen/instructables/</a>
+                    <br><br>
+                    Here are my hackster projects: <br>
+                    <a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer"
+                        href="https://www.hackster.io/mjdargen">https://www.hackster.io/mjdargen</a>
+                    <br><br>
+                    Here are my thingiverse designs: <br>
+                    <a style="word-wrap: break-word;" target="_blank" rel="noopener noreferrer"
+                        href="https://www.thingiverse.com/mjdargen/designs">https://www.thingiverse.com/mjdargen/designs</a>
+                    <br><br>
+                    Here are some student projects from previous classes/camps:<br>
+                    <div class="youtube_container">
+                        <iframe src="https://www.youtube.com/embed/ra8gbs2QOvE" frameborder="0" allowfullscreen
+                            class="video"></iframe>
+                    </div>
+                    <br>
+                    <div class="youtube_container">
+                        <iframe src="https://www.youtube.com/embed/-uttFvasdY0" frameborder="0" allowfullscreen
+                            class="video"></iframe>
+                    </div>
+                    <br>
+                    <div class="youtube_container">
+                        <iframe src="https://www.youtube.com/embed/vNbhNmfsVJk" frameborder="0" allowfullscreen
+                            class="video"></iframe>
+                    </div>
+                    <br><br>
+                    You can contact me at:<br>
+                    <a href="mailto:mjdargen@gmail.com">mjdargen@gmail.com</a>
+                    <br><br><br>
+                    ---- Have a great day! ----
+                    <br><br><br>
+                    Copyright &copy; 2022 Michael D'Argenio.
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- ascii webcam window -->
-	<div class="drsElement" id="asciiWindow" style="position: fixed; min-width: 300px; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(10% + 128px); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">webcam.exe
-				<button onclick="asciiXClick();stopWebcam();" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content">
-			<div id="ascii-video">
-				<div class="ascii-video">
-					<pre style="font-size: 1.5px; font-size: 1.5px;
-				line-height: 1px; text-align: center;"></pre>
-				</div>
-				<br>
-				<button id="asciiPause" onclick="asciiClick()" style="width: 70%; margin: auto; padding: 4px 8px 4px 8px; background-color: #721B6F">
-					<p id="asciiPauseText" style="color:white">Click here to pause.</p>
-				</button>
-				<br>
-				<br>
-				<p style="position: relative; padding: 0px;
-				background-color:#FF745F; color:black; text-align: center; font: 12px 'Space Mono';">The video above is not actually a video at all but a string of characters. You can pause the video and copy and paste the text!</p>
-			</div>
-		</div>
-	</div>
 
-	<!-- cowsay window -->
-	<div class="drsElement" id="cowsaywindow" style="position: fixed; min-width: 400px; width: 60%; height: 60%; top: calc(5% + 32px); left: calc(10% + 160px); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">cowsay.exe
-				<button onclick="cowsayXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content">
-			<div>
-				<h1>cowsay</h1>
-				<br>
-				<textarea onkeypress="checkCowsayEnter();" type="text" rows="3" id="cowsay-input" style="text-align: left; width: calc(100% - 10px); resize: none;"></textarea>
-				<br><br>
-				<button onclick="cowsayClick()" id="cowsay-button" style="width: 30%; margin: auto; padding: 4px 8px 4px 8px; background-color: #721B6F">
-					<p style="color:white">Speak!</p>
-				</button>
-				<p id="cow">
-				<pre id="cowsay-response" style="position: relative; display:none">
-						<span id="cowsay-output"></span>
+    <!-- project browser window -->
+    <!--
+        <div class="drsElement" id="projectswindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 32px); left: calc(10% + 32px); display: none;">
+            <div class="drsMoveHandle">
+                <div id="windowtopbar">projects
+                    <button onclick="projectsXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+                </button>
+            </div>
+        </div>
+        <div id="window_content" style="padding: 0px; height: calc(100% - 28px);">
+            <div style="position: relative; background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>File Name</th>
+                        <th>Type</th>
+                        <th>Size</th>
+                    </tr>
+                    <tr>
+                        <td onclick="_221()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_221()">Night Light</td>
+                        <td onclick="_221()">text</td>
+                        <td onclick="_221()">61 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_222()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_222()">Magic 8-Ball</td>
+                        <td onclick="_222()">text</td>
+                        <td onclick="_222()">114 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_223()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_223()">8x8 LED Matrix</td>
+                        <td onclick="_223()">text</td>
+                        <td onclick="_223()">79 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_224()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_224()">Weather Station</td>
+                        <td onclick="_224()">text</td>
+                        <td onclick="_224()">58 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_225()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_225()">Alarm System</td>
+                        <td onclick="_225()">text</td>
+                        <td onclick="_225()">57 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_226()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_226()">Morse Code Transmitter</td>
+                        <td onclick="_226()">text</td>
+                        <td onclick="_226()">75 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_227()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_227()">Calculator</td>
+                        <td onclick="_227()">text</td>
+                        <td onclick="_227()">194 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_228()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_228()">Digital Level</td>
+                        <td onclick="_228()">text</td>
+                        <td onclick="_228()">68 kB</td>
+                    </tr>
+                    <tr>
+                        <td onclick="_229()">
+                            <img src="media/w95-notepad.png" alt="file icon" style="width:12px; left:50%; top: 50%">
+                        </td>
+                        <td onclick="_229()">Apps Platform</td>
+                        <td onclick="_229()">text</td>
+                        <td onclick="_229()">149 kB</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- resume window -->
+    <div class="drsElement" id="resumewindow"
+        style="position: fixed; min-width: 400px; width: 60%; height: 60%; top: 5%; left: 10%; display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">resume.txt
+                <button onclick="resumeXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- teaching philosophy window -->
+    <div class="drsElement" id="philosophywindow"
+        style="position: fixed; min-width: 400px; width: 60%; height: 60%; top: calc(5% + 96px); left: calc(10% + 96px); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">teaching_philosophy.txt
+                <button onclick="philosophyXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ascii webcam window -->
+    <div class="drsElement" id="asciiWindow"
+        style="position: fixed; min-width: 300px; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(10% + 128px); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">webcam.exe
+                <button onclick="asciiXClick();stopWebcam();"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+        <div id="window_content">
+            <div id="ascii-video">
+                <div class="ascii-video">
+                    <pre style="font-size: 1.5px; font-size: 1.5px;
+                line-height: 1px; text-align: center;"></pre>
+                </div>
+                <br>
+                <button id="asciiPause" onclick="asciiClick()"
+                    style="width: 70%; margin: auto; padding: 4px 8px 4px 8px; background-color: #721B6F">
+                    <p id="asciiPauseText" style="color:white">Click here to pause.</p>
+                </button>
+                <br>
+                <br>
+                <p style="position: relative; padding: 0px;
+                background-color:#FF745F; color:black; text-align: center; font: 12px 'Space Mono';">The video above is
+                    not
+                    actually a video at all but a string of characters. You can pause the video and copy and paste the
+                    text!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- cowsay window -->
+    <div class="drsElement" id="cowsaywindow"
+        style="position: fixed; min-width: 400px; width: 60%; height: 60%; top: calc(5% + 32px); left: calc(10% + 160px); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">cowsay.exe
+                <button onclick="cowsayXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+        <div id="window_content">
+            <div>
+                <h1>cowsay</h1>
+                <br>
+                <textarea onkeypress="checkCowsayEnter();" type="text" rows="3" id="cowsay-input"
+                    style="text-align: left; width: calc(100% - 10px); resize: none;"></textarea>
+                <br><br>
+                <button onclick="cowsayClick()" id="cowsay-button"
+                    style="width: 30%; margin: auto; padding: 4px 8px 4px 8px; background-color: #721B6F">
+                    <p style="color:white">Speak!</p>
+                </button>
+                <p id="cow">
+                <pre id="cowsay-response" style="position: relative; display:none">
+                        <span id="cowsay-output"></span>
 &nbsp;&nbsp;&nbsp;\   ^__^
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\  (oo)\_______
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__)\       )\/\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||----w |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||     || </p>
-					</pre>
-			</div>
-		</div>
-	</div>
+                    </pre>
+            </div>
+        </div>
+    </div>
 
-	<!-- magic 8-ball window -->
-	<div class="drsElement" id="magic8ballwindow" style="position: fixed; min-width: 360px; min-height: 600px; width: 60%; height: 60%; top: calc(5%); left: calc(10% + 192px); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">magic8ball.exe
-				<button onclick="magic8ballXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content">
-			<div>
-				<p id="plat_prompt">Ask your question...</p>
-				<br>
-				<textarea onkeypress="check8BallEnter();" type="text" rows="3" id="8ball-input" style="text-align: left; width: calc(100% - 10px); resize: none;"></textarea>
-				<br><br>
-				<button onclick="magic8ballClick()" style="width: 70%; margin: auto; padding: 4px 8px 4px 8px; background-color: #721B6F">
-					<p style="color:white">Click here for answers.</p>
-				</button>
-				<div id="eight-ball" class="eight-ball">
-					<div class="answer">
-						<p id="magic8ball_answer">8</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- magic 8-ball window -->
+    <div class="drsElement" id="magic8ballwindow"
+        style="position: fixed; min-width: 360px; min-height: 600px; width: 60%; height: 60%; top: calc(5%); left: calc(10% + 192px); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">magic8ball.exe
+                <button onclick="magic8ballXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+        <div id="window_content">
+            <div>
+                <p id="plat_prompt">Ask your question...</p>
+                <br>
+                <textarea onkeypress="check8BallEnter();" type="text" rows="3" id="8ball-input"
+                    style="text-align: left; width: calc(100% - 10px); resize: none;"></textarea>
+                <br><br>
+                <button onclick="magic8ballClick()"
+                    style="width: 70%; margin: auto; padding: 4px 8px 4px 8px; background-color: #721B6F">
+                    <p style="color:white">Click here for answers.</p>
+                </button>
+                <div id="eight-ball" class="eight-ball">
+                    <div class="answer">
+                        <p id="magic8ball_answer">8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- writer's block window -->
-	<div class="drsElement" id="writerwindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">writersblock.exe
-				<button onclick="writerXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content">
-			<div style="position: relative; padding: 16px;
-		background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">Have writer's block? Machine learning can help! Try using this Google Colaboratory Notebook that shows how to use Happy Transformer library to easily generate text with EleutherAI's GPT-Neo, a state-of-the-art machine learning model for text generation. Colab allows you to use a virtual machine with a GPU to run machine learning models much more efficiently without burdening your hardware. You can run this model in Colab from any computer. Just follow the step by step instructions described in the project to generate your own text!
-				<br><br>
-				Below is an example of text generated using this Colab: "Harry turned to Frodo and gave him a look."
-				<br><br>
-				<div style="background-color:#008080; padding:8px">
-					Harry turned to Frodo and gave him a look. "You've done all you could. I don't see why we should be worried about your family."<br>
-					"I don't think I need to explain that," Frodo said, "I've told you before, I'm not really your brother."<br>
-					"It's not a secret, really," Sam said, "I've been telling you that since I was a little boy, and I think you know why."<br>
-					"I know that's not true," Frodo said, "but it's not a secret that I am a Hobbit."<br>
-					"You are a Hobbit," Sam said.<br>
-					"I am a Hobbit," Frodo repeated.<br>
-					"And I am a man," Sam said.<br>
-					"And I am a wizard," Frodo said.
-				</div>
-				<br><br>
-				Here is a link to the Google Colaboratory project:
-				<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://colab.research.google.com/drive/10I-73XfT_SFE_OYPqR_wHIRPWTcUOGiu?usp=sharing">https://colab.research.google.com/drive/10I-73XfT_SFE_OYPqR_wHIRPWTcUOGiu?usp=sharing</a>
-			</div>
-		</div>
-	</div>
+    <!-- writer's block window -->
+    <div class="drsElement" id="writerwindow"
+        style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">writersblock.exe
+                <button onclick="writerXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+        <div id="window_content">
+            <div style="position: relative; padding: 16px;
+        background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">Have writer's block? Machine
+                learning can help! Try using this Google Colaboratory Notebook that shows how to use Happy Transformer
+                library to easily generate text with EleutherAI's GPT-Neo, a state-of-the-art machine learning model for
+                text generation. Colab allows you to use a virtual machine with a GPU to run machine learning models
+                much more efficiently without burdening your hardware. You can run this model in Colab from any
+                computer. Just follow the step by step instructions described in the project to generate your own text!
+                <br><br>
+                Below is an example of text generated using this Colab: "Harry turned to Frodo and gave him a look."
+                <br><br>
+                <div style="background-color:#008080; padding:8px">
+                    Harry turned to Frodo and gave him a look. "You've done all you could. I don't see why we should be
+                    worried about your family."<br>
+                    "I don't think I need to explain that," Frodo said, "I've told you before, I'm not really your
+                    brother."<br>
+                    "It's not a secret, really," Sam said, "I've been telling you that since I was a little boy, and I
+                    think you know why."<br>
+                    "I know that's not true," Frodo said, "but it's not a secret that I am a Hobbit."<br>
+                    "You are a Hobbit," Sam said.<br>
+                    "I am a Hobbit," Frodo repeated.<br>
+                    "And I am a man," Sam said.<br>
+                    "And I am a wizard," Frodo said.
+                </div>
+                <br><br>
+                Here is a link to the Google Colaboratory project:
+                <a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;"
+                    href="https://colab.research.google.com/drive/10I-73XfT_SFE_OYPqR_wHIRPWTcUOGiu?usp=sharing">https://colab.research.google.com/drive/10I-73XfT_SFE_OYPqR_wHIRPWTcUOGiu?usp=sharing</a>
+            </div>
+        </div>
+    </div>
 
-	<!-- dorkwave window -->
-	<div class="drsElement" id="dorkwavewindow" style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
-		<div class="drsMoveHandle">
-			<div id="windowtopbar">dorkwave.exe
-				<button onclick="dorkwaveXClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-				</button>
-			</div>
-		</div>
-		<div id="window_content">
-			<div style="position: relative; padding: 16px;
-			background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
-				Dorkwave is a glitchy A/V mixer that is rather rudimentary but produces some beautiful, distorted effects. The full project is detailed in the Instructable linked below. You can also view a sampling of the sorts of effects you can create in
-				the video.
-				<br><br>
-				<div style="text-align: center">
-					<a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;" href="https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/">https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/</a>
-					<br><br>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VGSIivBiiZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- dorkwave window -->
+    <div class="drsElement" id="dorkwavewindow"
+        style="position: fixed; width: 60%; height: 60%; top: calc(5% + 64px); left: calc(20%); display: none;">
+        <div class="drsMoveHandle">
+            <div id="windowtopbar">dorkwave.exe
+                <button onclick="dorkwaveXClick()"
+                    style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;">
+                    X
+                </button>
+            </div>
+        </div>
+        <div id="window_content">
+            <div style="position: relative; padding: 16px;
+            background-color:#FF745F; color:black; text-align: left; font: 12px 'Space Mono';">
+                Dorkwave is a glitchy A/V mixer that is rather rudimentary but produces some beautiful, distorted
+                effects. The full project is detailed in the Instructable linked below. You can also view a sampling of
+                the sorts of effects you can create in
+                the video.
+                <br><br>
+                <div style="text-align: center">
+                    <a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;"
+                        href="https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/">https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/</a>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VGSIivBiiZM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	<!-- project windows -->
-	<!-- project windows -->
-	<!-- project windows -->
-	<!--
-	<div class="drsElement" id="221window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">nightlight.txt
-			<button onclick="_221XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <!-- project windows -->
+    <!-- project windows -->
+    <!-- project windows -->
+    <!--
+    <div class="drsElement" id="221window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">nightlight.txt
+            <button onclick="_221XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="222window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">magic8ball.txt
-			<button onclick="_222XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="222window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">magic8ball.txt
+            <button onclick="_222XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="223window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">ledmatrix.txt
-			<button onclick="_223XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="223window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">ledmatrix.txt
+            <button onclick="_223XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="224window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">weatherstation.txt
-			<button onclick="_224XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="224window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">weatherstation.txt
+            <button onclick="_224XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="225window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">alarmsystem.txt
-			<button onclick="_225XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="225window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">alarmsystem.txt
+            <button onclick="_225XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="226window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">morse.txt
-			<button onclick="_226XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="226window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">morse.txt
+            <button onclick="_226XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="227window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">calculator.txt
-			<button onclick="_227XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="227window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">calculator.txt
+            <button onclick="_227XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="228window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">digitallevel.txt
-			<button onclick="_228XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
+    <div class="drsElement" id="228window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">digitallevel.txt
+            <button onclick="_228XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
 
-	<div class="drsElement" id="229window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
-	top: calc(20%); left: calc(20%); display: none;">
-	<div class="drsMoveHandle">
-		<div id="windowtopbar">appsplatform.txt
-			<button onclick="_229XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
-		</button>
-	</div></div></div>
-	-->
+    <div class="drsElement" id="229window" style="position: fixed; min-width: 400px; width: 60%; height: 60%;
+    top: calc(20%); left: calc(20%); display: none;">
+    <div class="drsMoveHandle">
+        <div id="windowtopbar">appsplatform.txt
+            <button onclick="_229XClick()" style="right: 0;	top: 0px;	margin: auto;	position: absolute;	padding: 6px 8px 6px 8px; background-color: #008080; font-size: 16px; line-height: 16px; cursor: pointer;"> X
+        </button>
+    </div></div></div>
+    -->
 
 
 </body>
 
 <script>
-	initDragResize();
+    initDragResize();
 </script>
 
 </html>

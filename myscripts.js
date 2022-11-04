@@ -9,7 +9,7 @@ function dropupToggle() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+window.onclick = function (e) {
 	if (!e.target.matches('.start')) {
 		var myDropup = document.getElementById("myDropup");
 		var myDropupOS = document.getElementById("myDropupOS");
@@ -34,8 +34,8 @@ function aboutIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -55,8 +55,8 @@ function projectsIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -76,8 +76,8 @@ function cowsayIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -107,8 +107,8 @@ function asciiIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -122,16 +122,16 @@ function resumeIconClick() {
 		x.style.display = "block";
 
 		var doc = document.createElement('iframe');
-		doc.setAttribute("id","resumedoc");
+		doc.setAttribute("id", "resumedoc");
 		doc.setAttribute("src", "./web/viewer.html?file=../documents/resume.pdf#navpanes=0&amp;toolbar=0&amp;statusbar=0&amp;view=FitV&amp;pagemode=none&amp;page=1");
-		doc.setAttribute("style","border: none; width: 100%; height: calc(100% - 32px)");
+		doc.setAttribute("style", "border: none; width: 100%; height: calc(100% - 32px)");
 		x.appendChild(doc);
 
 		// makes current window the top window
 		var windows = document.getElementsByClassName('drsElement');
 		var i = windows.length;
-		while(i--) {
-				windows[i].style.zIndex = "3";
+		while (i--) {
+			windows[i].style.zIndex = "3";
 		}
 		x.style.zIndex = "4";
 		x.focus();
@@ -155,16 +155,16 @@ function philosophyIconClick() {
 		x.style.display = "block";
 
 		var doc = document.createElement('iframe');
-		doc.setAttribute("id","philosophydoc");
+		doc.setAttribute("id", "philosophydoc");
 		doc.setAttribute("src", "./web/viewer.html?file=../documents/philosophy.pdf#navpanes=0&amp;toolbar=0&amp;statusbar=0&amp;view=FitV&amp;pagemode=none&amp;page=1");
-		doc.setAttribute("style","border: none; width: 100%; height: calc(100% - 32px)");
+		doc.setAttribute("style", "border: none; width: 100%; height: calc(100% - 32px)");
 		x.appendChild(doc);
 
 		// makes current window the top window
 		var windows = document.getElementsByClassName('drsElement');
 		var i = windows.length;
-		while(i--) {
-				windows[i].style.zIndex = "3";
+		while (i--) {
+			windows[i].style.zIndex = "3";
 		}
 		x.style.zIndex = "4";
 		x.focus();
@@ -201,8 +201,8 @@ function magicIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -222,8 +222,8 @@ function writerIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -243,8 +243,8 @@ function dorkwaveIconClick() {
 	// makes current window the top window
 	var windows = document.getElementsByClassName('drsElement');
 	var i = windows.length;
-	while(i--) {
-			windows[i].style.zIndex = "3";
+	while (i--) {
+		windows[i].style.zIndex = "3";
 	}
 	x.style.zIndex = "4";
 	x.focus();
@@ -296,6 +296,16 @@ function thingiverseIconClick() {
 /* clicking thesis icon */
 function thesisIconClick() {
 	window.open('https://repository.lib.ncsu.edu/handle/1840.20/37531', '_blank');
+}
+
+/* clicking thesis icon */
+function colorIconClick() {
+	window.open('https://dargen.io/coloroftheday', '_blank');
+}
+
+/* clicking youtube icon */
+function youtubeIconClick() {
+	window.open('https://www.youtube.com/@mjdargen', '_blank');
 }
 
 /* --------------------------------------------------------------- */
@@ -504,4 +514,28 @@ function thingiverseIconHover() {
 function thingiverseIconUnhover() {
 	var x = document.getElementById('thingiverseIcon');
 	x.setAttribute("src", "media/thingiverse.png");
+}
+
+/* hovering over color */
+function colorIconHover() {
+	var x = document.getElementById('colorIcon');
+	x.setAttribute("src", "media/color-inv.png");
+}
+
+/* unhovering over color */
+function colorIconUnhover() {
+	var x = document.getElementById('colorIcon');
+	x.setAttribute("src", "media/color.png");
+}
+
+/* hovering over youtube */
+function youtubeIconHover() {
+	var x = document.getElementById('youtubeIcon');
+	x.setAttribute("src", "media/youtube-inv.png");
+}
+
+/* unhovering over youtube */
+function youtubeIconUnhover() {
+	var x = document.getElementById('youtubeIcon');
+	x.setAttribute("src", "media/youtube.png");
 }
