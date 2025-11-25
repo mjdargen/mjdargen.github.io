@@ -22,28 +22,23 @@ Here are my thingiverse designs:
 Here are some student projects from previous classes/camps:
 
 <div class="youtube_container">
-    <iframe src="https://www.youtube.com/embed/8hEAvqUsr30" frameborder="0" allowfullscreen
-        class="video"></iframe>
+    <iframe src="https://www.youtube.com/embed/8hEAvqUsr30" frameborder="0" allowfullscreen></iframe>
 </div>
 <br>
 <div class="youtube_container">
-    <iframe src="https://www.youtube.com/embed/wBFTfc-vfsk" frameborder="0" allowfullscreen
-        class="video"></iframe>
+    <iframe src="https://www.youtube.com/embed/wBFTfc-vfsk" frameborder="0" allowfullscreen></iframe>
 </div>
 <br>
 <div class="youtube_container">
-    <iframe src="https://www.youtube.com/embed/ra8gbs2QOvE" frameborder="0" allowfullscreen
-        class="video"></iframe>
+    <iframe src="https://www.youtube.com/embed/ra8gbs2QOvE" frameborder="0" allowfullscreen></iframe>
 </div>
 <br>
 <div class="youtube_container">
-    <iframe src="https://www.youtube.com/embed/-uttFvasdY0" frameborder="0" allowfullscreen
-        class="video"></iframe>
+    <iframe src="https://www.youtube.com/embed/-uttFvasdY0" frameborder="0" allowfullscreen></iframe>
 </div>
 <br>
 <div class="youtube_container">
-    <iframe src="https://www.youtube.com/embed/vNbhNmfsVJk?si=Dp2Nrn2rGKqB1pvo" frameborder="0" allowfullscreen
-        class="video"></iframe>
+    <iframe src="https://www.youtube.com/embed/vNbhNmfsVJk?si=Dp2Nrn2rGKqB1pvo" frameborder="0" allowfullscreen></iframe>
 </div>
 
 You can contact me at: [mjdargen@gmail.com](mailto:mjdargen@gmail.com)

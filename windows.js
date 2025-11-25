@@ -84,6 +84,28 @@ const WINDOWS = [
             </div>
         `,
   },
+  {
+    id: "dorkwavewindow",
+    title: "dorkwave.exe",
+    width: "60%",
+    height: "60%",
+    top: "calc(5% + 64px)",
+    left: "calc(20%)",
+    content: `
+             <p>Dorkwave is a glitchy A/V mixer that is rather rudimentary but produces some beautiful, distorted
+                effects. The full project is detailed in the Instructable linked below. You can also view a sampling of
+                the sorts of effects you can create in
+                the video.</p>
+              <p>
+                <a target="_blank" rel="noopener noreferrer" style="word-wrap: break-word;"
+                    href="https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/">https://www.instructables.com/id/Dorkwave-Glitchy-AV-Mixer/</a>
+              </p>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VGSIivBiiZM" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        `,
+  },
 ];
 
 // Function to generate the standard HTML shell
