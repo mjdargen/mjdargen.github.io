@@ -75,7 +75,7 @@ const WINDOWS = [
     top: "5%",
     left: "calc(10% + 192px)",
     content: `
-            <p id="plat_prompt">Ask your question...</p>
+            <p id="magic8ball_prompt">Ask your question...</p>
             <textarea id="8ball-input" rows="3" style="width:calc(100% - 10px);"></textarea>
             <br><br>
             <button class="window-button" onclick="magic8ballClick()">Click here for answers.</button>
