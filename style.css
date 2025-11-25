@@ -1,91 +1,117 @@
-* {
-	/*font-family: 'Space Mono', monospace;
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 18px;*/
-	/*{cursor: url(http://ani.cursors-4u.net/cursors/cur-13/cur1150.ani),
-	url(http://ani.cursors-4u.net/cursors/cur-13/cur1150.png), auto !important}*/
+:root {
+  --mono: "Space Mono", monospace;
+  --accent: #ff745f;
+  --accent-dark: #721b6f;
+  --border-accent: #ec6760;
+}
+
+/* Everything in the taskbar uses these defaults */
+.OS,
+.startbutton,
+.dropup,
+.dropup-OS,
+.dropup-content,
+.dropup-content a,
+#clock {
+  font-family: var(--mono);
+  user-select: none;
 }
 
 html {
-	max-height: 100%;
-	max-width: 100%;
+  font-family: var(--mono);
+  max-height: 100%;
+  max-width: 100%;
 }
 body {
-	max-height: 100%;
-	max-width: 100%;
-	position: relative;
-	margin: auto;
+  font-family: var(--mono);
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+button {
+  all: unset;
+  font-family: var(--mono);
+  background-color: #721b6f;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Force BMC widget to use Space Mono */
+.bmc-btn,
+.bmc-btn *,
+#bmc-wbtn,
+#bmc-wbtn * {
+  font-family: var(--mono);
 }
 
 /* --------------------------------------------------- */
 /*                <p> flavors text info                */
 /* --------------------------------------------------- */
 
-h1{
-	font-family: 'Space Mono', monospace;
-	color: #000000;
-	text-align: center;
-	font-size: 18px;
-	line-height: 18px;
-	margin: 0;
+h1 {
+  font-family: var(--mono);
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
 }
 
 p {
-	font-size: 12pt;
-	font-family: 'Space Mono', monospace;
-	width: 100%;
-	height: 100%;
-	color: #000000;
-	margin: 0 0 0 0;
-	text-align:center;
+  font-size: 10pt;
+  font-family: var(--mono);
+  color: #000000;
+  /* text-align: center; */
 }
 
 p#plat_prompt {
-	position: relative;
-	text-align: left;
-	font-size: 18px;
-	line-height: 18px;
-	line-height: normal;
+  position: relative;
+  text-align: left;
+  font-size: 18px;
+  line-height: 18px;
+  line-height: normal;
 }
 
 p#plat_answer {
-	font-weight: bold;
-	font-size: 20px;
-	background-color: #FF745F;
-	color: black;
-	margin: auto;
-	font-style: italic;
-	/*border: 10px solid #721B6F;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ff745f;
+  color: black;
+  margin: auto;
+  font-style: italic;
+  /*border: 10px solid #721B6F;
 	width: calc(100% - 20px);*/
 }
 
 p#magic8ball_answer {
-	font-weight: bold;
-	font-size: 20px;
-	background-color: #FF745F;
-	color: black;
-	margin: auto;
-	font-style: italic;
-	/*border: 10px solid #721B6F;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ff745f;
+  color: black;
+  margin: auto;
+  font-style: italic;
+  /*border: 10px solid #721B6F;
 	width: calc(100% - 20px);*/
 }
 
 p#cow {
-	font-size: 10pt;
-	font-family: 'Courier New', monospace;
-	text-align: center;
-	font-weight: normal;
-	margin: 0 !important
-	padding: 0;
+  font-size: 10pt;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 !important;
+  padding: 0;
 }
 
 span#cowsay_output {
-	font-size: 10pt;
-	font-family: 'Courier New', monospace;
-	text-align: center;
-	font-weight: normal;
-	margin: 0 !important;
+  font-size: 10pt;
+  font-family: "Courier New", monospace;
+  font-family: var(--mono);
+  text-align: center;
+  font-weight: normal;
+  margin: 0 !important;
 }
 
 /* --------------------------------------------------- */
@@ -93,424 +119,478 @@ span#cowsay_output {
 /* --------------------------------------------------- */
 
 figure {
-	display: inline-block;
-	text-align: center;
-	margin: 0 0 0 0;
-	z-index: 1;
-	cursor: pointer;
-	color: black;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 0 0;
+  z-index: 1;
+  cursor: pointer;
+  color: black;
 }
 figure figcaption {
-	font-family: 'Space Mono', monospace;
-	text-align: center;
-	font-size: 12px;
-	z-index: 1;
-	line-height: 12px;
+  font-family: var(--mono);
+  text-align: center;
+  font-size: 12px;
+  z-index: 1;
+  line-height: 12px;
 }
 figure:hover {
-	color: white;
+  color: white;
 }
 
 /* --------------------------------------------------- */
 /*                background image info                */
 /* --------------------------------------------------- */
 #bg {
-	position: fixed;
-	background-color: #008080;
-	width: 100%;
-	height: 100%;
-	user-select: none;
-	z-index: 0;
+  position: fixed;
+  background-color: #008080;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  z-index: 0;
 }
 #bg img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 24px;
-	margin: auto;
-	max-width: 75%;
-	max-height: 75%;
-	user-select: none;
-	z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  margin: auto;
+  max-width: 75%;
+  max-height: 75%;
+  user-select: none;
+  z-index: 0;
 }
 
 /* --------------------------------------------------- */
-/*                 projects table info                 */
+/*                  desktop icons info                 */
 /* --------------------------------------------------- */
-table {
-	font-family: 'Space Mono', monospace;
-	border-collapse: collapse;
-	width: 100%;
-	background-color: #DF576C;
-	user-select: none;
+.desktop-column {
+  position: absolute;
+  top: 16px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
 }
 
-th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 4px;
-	font-size: 14px;
-	font-weight: bold;
-	background-color: #DF576C;
-	cursor: pointer;
+#desktop-left {
+  left: 16px;
 }
 
-td {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 2px;
-	font-size: 14px;
-	cursor: pointer;
+#desktop-right {
+  right: 16px;
 }
 
-tr:nth-child(even) {
-	background-color: #FF745F;
-	font-size: 12px;
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  cursor: pointer;
 }
 
+.desktop-icon img {
+  max-height: 40px;
+  max-width: 50px;
+  image-rendering: pixelated;
+}
+
+.desktop-icon label {
+  margin-top: 4px;
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 12px;
+  text-align: center;
+  width: 70px;
+  text-shadow: 1px 1px 0 #000;
+  line-height: 12px;
+}
 
 /* --------------------------------------------------- */
 /*               Start menu and taskbar                */
 /* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*                   Taskbar Right Side                 */
+/* --------------------------------------------------- */
+
 .OS {
-	position: fixed;
-	right: 0px;
-	bottom: 0px;
-	width: calc(100% - 100px);
-	background-color: #FF745F;
-	margin: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 92px); /* lines up with start button */
+  padding: 4px;
 
-	padding: 4px;
-	font-size: 16px;
-	line-height: 24px;
-	font-family: 'Space Mono', monospace;
-	text-align: right;
-	font-weight: bold;
-	color: #000000;
+  background-color: var(--accent);
+  color: black;
 
-	border: none;
-	user-select: none;
-	z-index: 12;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+
+  border: none;
+  z-index: 12;
 }
 
-.startbutton {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	width: 92px;
-	background-color: #FF745F;
-	margin: 0;
-
-	padding: 4px 0px 4px 4px;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: left;
-	font-family: 'Space Mono', monospace;
-	font-weight: bold;
-	color: #000000;
-
-	border: 2px outset #EC6760;
-	cursor: pointer;
-	user-select: none;
-	z-index: 12;
+#clock {
+  padding: 6px;
+  font-size: 12px;
+  border: 2px solid var(--border-accent);
+  float: right;
+  margin: 0 0 0 8px;
 }
 
-/* The container <div> - needed to position the dropup content */
+.os-icon {
+  position: absolute;
+  width: 22px;
+  padding: 1px 0 0 0;
+  margin: 0;
+}
+
+/* --------------------------------------------------- */
+/*                    Start Button                      */
+/* --------------------------------------------------- */
+
+.start-button {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 92px;
+  padding: 2px 4px 2px 4px;
+
+  background-color: var(--accent);
+  color: black;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: none;
+
+  border: 2px outset var(--border-accent);
+  cursor: pointer;
+
+  z-index: 12;
+}
+
+/* --------------------------------------------------- */
+/*                        Dropup                        */
+/* --------------------------------------------------- */
+
 .dropup {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	width: 92px;
-	background-color: #FF745F;
-	margin: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
 
-	z-index: 12;
-	user-select: none;
-	border: 2px solid black;
-	border-width: 0px 2px 0px 0px;
+  width: 92px;
+  background-color: var(--accent);
+
+  margin: 0;
+  z-index: 99;
 }
 
-/* Dropup content (Hidden by Default) */
+/* --------------------------------------------------- */
+/*                 User Panel (Rotated Bar)             */
+/* --------------------------------------------------- */
+
 .dropup-OS {
-	position: relative;
-	transform-origin: 0 0;
-	transform: rotate(-90deg);
-	left: 0px;
-	bottom: -4px;
-	border:solid #EC6760;
-	border-width: 4px 4px 4px 4px;
-	margin: auto;
+  display: none;
+  position: absolute;
 
-	display: none;
-	font-weight: bold;
-	font-family: 'Space Mono', monospace;
-	font-size: 18px;
-	color: black;
-	background-color: #FF745F;
-	width: 540px;
-	text-align: left;
-	z-index: 12;
-	user-select: none;
+  width: 540px;
+  background-color: var(--accent);
+  color: black;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+
+  border: 4px solid var(--border-accent);
+
+  bottom: 0;
+  left: 0;
+
+  transform-origin: bottom left;
+  transform: rotate(-90deg) translate(32px, 40px);
 }
 
-span#clock {
-	font-family: 'Space Mono', monospace;
-	padding: 8px 6px 8px 6px;
-	/*padding: 6px 6px 6px 6px;*/
-	font-size: 12px;
-	line-height: 12px;
-	position: relative;
-	top: 0px;
-	right: 0px;
-	cursor: default;
-	border: 2px #555555 solid;
-	float: right;
-	margin: 0;
-	border: 2px solid #EC6760;
-}
+/* --------------------------------------------------- */
+/*                     Dropup Content                  */
+/* --------------------------------------------------- */
 
-/* Dropup content (Hidden by Default) */
 .dropup-content {
-	display: none;
-	position: absolute;
-	bottom: 32px;
-	left: 34px;
-	margin: auto;
-	background-color: #FF745F;
-	width: 220px;
-	height: 540px;
-	border:solid #EC6760;
-	border-width: 4px 4px 4px 4px;
-	user-select: none;
+  display: none;
+  position: absolute;
+
+  bottom: 32px;
+  left: 36px;
+
+  width: 240px;
+  height: 540px;
+
+  background-color: var(--accent);
+  border: 4px solid var(--border-accent);
 }
 
-/* Links inside the dropup */
+/* --------------------------------------------------- */
+/*                    Menu Items                        */
+/* --------------------------------------------------- */
+
 .dropup-content a {
-	text-align: left;
-	color: black;
-	padding: 2px 16px;
-	text-decoration: none;
-	display: block;
-	font-family: 'Space Mono', monospace;
-	font-weight: bold;
-	background-color: #FF745F;
-	font-size: 16px;
-	cursor: pointer;
-	user-select: none;
+  display: block;
+
+  padding: 2px 16px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+
+  color: black;
+  background-color: var(--accent);
+
+  cursor: pointer;
 }
 
-/* Change color of dropup links on hover */
 .dropup-content a:hover {
-	color: white;
-	background-color: #721B6F;
+  background-color: var(--accent-dark);
+  color: white;
 }
 
-/* Show the dropup menu on hover */
+/* --------------------------------------------------- */
+/*                 Hover Behavior                      */
+/* --------------------------------------------------- */
+
 .dropup:hover .dropup-content {
-	display: block;
-	background-color: #FF745F;
+  display: block;
 }
 
 .dropup:hover .dropup-OS {
-	display: block;
+  display: block;
 }
 
-/* Change the background color of the dropup button when the dropup content is shown */
-.dropup:hover .startbutton {
-	color: white;
-	background-color: #721B6F;
-}
-
-/* --------------------------------------------------- */
-/*                 pop up window info                  */
-/* --------------------------------------------------- */
-#windowtopbar {
-	cursor: move;
-	background-color: #721B6F;
-	border: 2px solid #d3d3d3;
-	text-align: left;
-	font-family: 'Space Mono', monospace;
-	color: #FFFFFF;
-	font-size: 16px;
-	line-height: 16px;
-	margin: none;
-	padding: 6px 4px 6px 4px;
-}
-
-.iframe_content {
-	height: calc(100% - 36px); /* minus header minus padding */
-	width: calc(100% - 4px); /* minus header minus padding */
-	text-align:center;
-	z-index: inherit;
-	overflow-y: auto;
-}
-
-#window_content {
-	position: relative;
-	height: calc(100% - 32px - 32px); /* minus header minus padding */
-	padding: 16px;
-	text-align:center;
-	z-index: inherit;
-	overflow-y: auto;
-
-	/* -webkit-overflow-scrolling: touch;
-
-	overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; */
+.dropup:hover .start-button {
+  background-color: var(--accent-dark);
+  color: white;
 }
 
 /* --------------------------------------------------- */
-/*                     Drag resize                     */
+/*          WINDOW FRAME + TOPBAR + CONTENT            */
 /* --------------------------------------------------- */
+.window-frame {
+  position: fixed;
+  background-color: #ff745f;
+  border: 2px solid #d3d3d3;
+  min-width: 300px;
+  min-height: 200px;
+  display: none;
+  z-index: 4;
+  overflow: visible;
+}
+
+.window-topbar {
+  cursor: move;
+  background-color: #721b6f;
+  border-bottom: 2px solid #d3d3d3;
+  text-align: left;
+  font-family: var(--mono);
+  color: white;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px 4px;
+  position: relative;
+}
+
+/* Close button */
+.window-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 6px 8px;
+  background-color: #008080;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Standard interior content */
+.window-content {
+  position: absolute;
+  top: 32px; /* Height of topbar */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Fill remaining height */
+  padding: 0; /* Important: no padding here */
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.window-content {
+  position: absolute;
+  top: calc(32px + 6px); /* topbar + padding */
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  overflow-y: auto;
+}
+
+.pdf-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 2px); /* prevents phantom scrollbar */
+  border: none;
+  display: block;
+  overflow: hidden;
+}
+
+/* Common inner panel (pink content blocks) */
+.window-panel {
+  padding: 16px;
+  background-color: #ff745f;
+  color: black;
+  text-align: left;
+  font: 12px "Space Mono";
+}
+
+/* For headshot images */
+.window-headshot {
+  width: 200px;
+  user-select: none;
+}
+
+/* Standard purple window button */
+.window-button {
+  width: 70%;
+  margin: auto;
+  padding: 4px 8px;
+  background-color: #721b6f;
+  color: white;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+/* Window with custom minimums */
+.window-large {
+  min-width: 360px;
+  min-height: 600px;
+}
+
+/* DRAG RESIZE (unchanged) */
 .drsElement {
-	position: fixed;
-	background: #FF745F;
-	border: 2px solid #d3d3d3;
-	min-height: 200px;
-	min-width: 300px;
-	z-index: 4;
-	margin: auto;
+  position: fixed;
+  background: #ff745f;
+  border: 2px solid #d3d3d3;
+  z-index: 4;
 }
 
-/*
-The main mouse handle that moves the whole element.
-You can apply to the same tag as drsElement if you want.
-*/
-.drsMoveHandle {
-	background-color: #721B6F;
-	cursor: move;
-	margin: none;
-	padding: none;
-	border: none;
-	height: 32px;
-}
-
-/*
-The DragResize object name is automatically applied to all generated
-corner resize handles, as well as one of the individual classes below.
-*/
 .dragresize {
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	opacity: 0.0;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: transparent;
 }
 
-/*
-Individual corner classes - required for resize support.
-These are based on the object name plus the handle ID.
-*/
 .dragresize-tl {
-	top: -16px;
-	left: -16px;
-	cursor: nw-resize;
+  cursor: nwse-resize;
+  top: -4px;
+  left: -4px;
 }
 .dragresize-tm {
-	top: -10px;
-	left: 50%;
-	margin-left: -5px;
-	cursor: n-resize;
+  cursor: ns-resize;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .dragresize-tr {
-	top: -16px;
-	right: -16px;
-	cursor: ne-resize;
+  cursor: nesw-resize;
+  top: -4px;
+  right: -4px;
 }
 
 .dragresize-ml {
-	top: 50%;
-	margin-top: -5px;
-	left: -10px;
-	cursor: w-resize;
+  cursor: ew-resize;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .dragresize-mr {
-	top: 50%;
-	margin-top: -5px;
-	right: -10px;
-	cursor: e-resize;
+  cursor: ew-resize;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .dragresize-bl {
-	bottom: -16px;
-	left: -16px;
-	cursor: sw-resize;
+  cursor: nesw-resize;
+  bottom: -4px;
+  left: -4px;
 }
 .dragresize-bm {
-	bottom: -10px;
-	left: 50%;
-	margin-left: -5px;
-	cursor: s-resize;
+  cursor: ns-resize;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .dragresize-br {
-	bottom: -16px;
-	right: -16px;
-	cursor: se-resize;
-}
-
-#drag-1, #drag-2 {
-	width: 25%;
-	min-height: 6.5em;
-	margin: 10%;
-	background-color: #29e;
-	color: white;
-	border-radius: 0.75em;
-	padding: 4%;
-	touch-action: none;
-	user-select: none;
-	-webkit-transform: translate(0px, 0px);
-	transform: translate(0px, 0px);
+  cursor: nwse-resize;
+  bottom: -4px;
+  right: -4px;
 }
 
 /* --------------------------------------------------- */
 /*                      magic 8-ball                   */
 /* --------------------------------------------------- */
 div.eight-ball {
-	position: relative;
-	background-color: black;
-	border: 1px solid black;
-	border-radius: 50%;
-	width: 300px;
-	height: 300px;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	margin-top: 30px;
+  position: relative;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 div.answer {
-	background-color: #333;
-	border: 1px solid #333;
-	border-radius: 50%;
-	width: 50%;
-	height: 50%;
-	margin: 25% auto;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 25% auto;
 }
 
 p#magic8ball_answer {
-	position: relative;
-	text-align: center;
-	color: lightblue;
-	font-size: 60px;
-	top: 20%;
-	left: 10%;
-	padding: 0;
-	margin: 0;
-	width: 70%;
-	height: 50%;
-	background-color: inherit;
+  position: relative;
+  text-align: center;
+  color: lightblue;
+  font-size: 60px;
+  top: 20%;
+  left: 10%;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  height: 50%;
+  background-color: inherit;
 }
 
 /* youtube video */
 .youtube_container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  height: 50%;
 }
 .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

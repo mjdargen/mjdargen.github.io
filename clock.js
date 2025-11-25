@@ -1,5 +1,5 @@
 // Clock Functions (for taskbar clock)
-function updateClock(){
+function updateClock() {
   var d = new Date();
   var x = document.getElementById("clock");
   var h = d.getHours();
@@ -10,25 +10,20 @@ function updateClock(){
 
 // pads zero in front of number to maintain spacing
 function padZero(i) {
-  if (i < 10)
-    i = "0" + i;
+  if (i < 10) i = "0" + i;
   return i;
 }
 
 // converts from 24h system to 12h system
 function twelveHour(h) {
-  if (h > 12)
-    h = h - 12;
-  else if (h == 0)
-    h = 12;
+  if (h > 12) h = h - 12;
+  else if (h == 0) h = 12;
   return h;
 }
 
 // calculates am or pm
 function ampm(h) {
-  if(h < 12)
-    var a = 'AM';
-  else
-    var a = 'PM';
+  if (h < 12) var a = "AM";
+  else var a = "PM";
   return a;
 }
