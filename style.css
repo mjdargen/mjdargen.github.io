@@ -548,3 +548,38 @@ p#magic8ball_answer {
   height: auto;
   aspect-ratio: 16 / 9;
 }
+
+/* instagram reel */
+.instagram_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.instagram_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram_container iframe {
+  /* width: 100%; */
+  /* max-width: 360px; */
+  /* aspect-ratio: 9 / 16; */
+  width: 100%;
+  max-width: 400px;
+  height: 480px;
+  aspect-ratio: 5 / 6;
+  border: 0;
+}
+
+.instagram_grid > .instagram_container:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .instagram_grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,6 @@
- <img src="media/headshot.png" alt="headshot" style="user-select: none; width: 200px;">
+<div style="text-align: center">
+
+<img src="media/headshot.png" alt="headshot" style="user-select: none; width: 200px;">
 
 Hello, my name is Michael D'Argenio. I am an electrical and computer engineer turned educator. I have a lot of experience in embedded software and hardware design. I am taking my technical experiences and leveraging them to create engaging curricula for students to interact with STEM and help make the world a better place.
 
@@ -19,7 +21,57 @@ Here is my youtube channel:
 Here are my thingiverse designs:  
 [https://www.thingiverse.com/mjdargen/designs](https://www.thingiverse.com/mjdargen/designs)
 
-Here are some student projects from previous classes/camps:
+## Student work
+
+Below are examples of student work from previous courses and camps. These projects emphasize experimentation, iteration, and creative problem solving across physical computing, interactive media, and digital fabrication.
+
+### Project / Process Documentation
+
+These reels document in-progress experiments and final builds from multiple semesters:
+
+<div class="instagram_grid">
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/C3btf-BNzEp/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/C5Y8WRzR0C4/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/C7XQBEpPFUh/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/DHy82mOvmnZ/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/DJ51PCItYvx/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/DNwHnj9ZOCD/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/DSOZioRjMzL/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/DPo4T6rkvo4/embed" allowfullscreen></iframe>
+  </div>
+
+  <div class="instagram_container">
+    <iframe src="https://www.instagram.com/reel/DSOgFQ4DNTn/embed" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+### Project Highlights
+
+Here are some sample student projects:
 
 <div class="youtube_container">
     <iframe src="https://www.youtube.com/embed/8hEAvqUsr30" frameborder="0" allowfullscreen></iframe>
@@ -41,8 +93,20 @@ Here are some student projects from previous classes/camps:
     <iframe src="https://www.youtube.com/embed/vNbhNmfsVJk?si=Dp2Nrn2rGKqB1pvo" frameborder="0" allowfullscreen></iframe>
 </div>
 
-You can contact me at: [mjdargen@gmail.com](mailto:mjdargen@gmail.com)
+### Student Portfolios
+
+You can also explore more complete student portfolios and technical demos here:
+
+Web Development Demos (student projects and examples): [https://github.com/mjdargen/webdev-demos](https://github.com/mjdargen/webdev-demos)
+
+Generative Art Student Portfolios: [https://github.com/mjdargen/generative-art-portfolio](https://github.com/mjdargen/generative-art-portfolio)
+
+<br><br>
 
 \---- Have a great day! ----
 
 Copyright © 2025 Michael D'Argenio.
+
+Contact me at: [mjdargen@gmail.com](mailto:mjdargen@gmail.com)
+
+</div>
