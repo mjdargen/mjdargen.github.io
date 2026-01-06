@@ -105,7 +105,7 @@ Generative Art Student Portfolios: [https://github.com/mjdargen/generative-art-p
 
 \---- Have a great day! ----
 
-Copyright © 2025 Michael D'Argenio.
+Copyright © 2026 Michael D'Argenio.
 
 Contact me at: [mjdargen@gmail.com](mailto:mjdargen@gmail.com)
 
